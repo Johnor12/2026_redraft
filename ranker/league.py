@@ -15,7 +15,13 @@ draft.json carries no lineup information.
 from __future__ import annotations
 
 SCHEME = "half_ppr"
-POINTS_FIELD = "points"  # the one value column in pool.json: one-season projected points
+POINTS_FIELD = "points"  # pool.json's median one-season projection; the ranker's scalar
+POINTS_LOW_FIELD = "points_low"  # the provider's downside projection (10th percentile)
+POINTS_HIGH_FIELD = "points_high"  # the provider's upside projection (90th percentile)
+# Swanson's rule for collapsing 10th/50th/90th-percentile quantiles into an expectation.
+# value.reprice_with_uncertainty applies it against the post-draft wire, so each player
+# is priced at the wire plus his truncated expected value above it.
+QUANTILE_WEIGHTS = (0.3, 0.4, 0.3)
 POSITIONS = ("QB", "RB", "WR", "TE")
 
 TEAMS = 10

@@ -14,11 +14,11 @@ proxy for how soon the room takes him.
 | 4  | Ja'Marr Chase       | WR  | 257  | 3         |
 | 5  | Christian McCaffrey | RB  | 256  | 11        |
 | 6  | Jonathan Taylor     | RB  | 254  | 7         |
-| 7  | James Cook          | RB  | 245  | 10        |
+| 7  | James Cook          | RB  | 245  | 9         |
 | 8  | Derrick Henry       | RB  | 238  | 28        |
 | 9  | Jaxon Smith-Njigba  | WR  | 235  | 5         |
 | 10 | De'Von Achane       | RB  | 230  | 12        |
-| 11 | Saquon Barkley      | RB  | 228  | 19        |
+| 11 | Saquon Barkley      | RB  | 228  | 18        |
 | 12 | Amon-Ra St. Brown   | WR  | 228  | 6         |
 
 ## Tiers

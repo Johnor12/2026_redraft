@@ -62,13 +62,36 @@ SOURCES = {
         "file": "fantasypros.html",
         "format": "redraft half-PPR expert consensus",
     },
+    "espn_adp": {
+        "name": "ESPN ADP",
+        "url": (
+            "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/"
+            "segments/0/leaguedefaults/3?view=kona_player_info"
+        ),
+        "file": "espn_adp.json",
+        "format": "ESPN live-draft ADP across all ESPN leagues",
+        # kona_player_info returns 50 players unless a filter raises the limit;
+        # percent-owned order just selects the draftable set — ranks come from ADP.
+        "headers": {
+            "X-Fantasy-Filter": (
+                '{"players":{"limit":400,'
+                '"sortPercOwned":{"sortPriority":1,"sortAsc":false}}}'
+            )
+        },
+    },
 }
 
 
-def fetch(url: str, timeout: int = TIMEOUT_SECONDS) -> tuple[bytes, str | None]:
+def fetch(
+    url: str, headers: dict[str, str] | None = None, timeout: int = TIMEOUT_SECONDS
+) -> tuple[bytes, str | None]:
     request = urllib.request.Request(
         url,
-        headers={"Accept": "application/json,text/html", "User-Agent": USER_AGENT},
+        headers={
+            "Accept": "application/json,text/html",
+            "User-Agent": USER_AGENT,
+            **(headers or {}),
+        },
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read(), response.headers.get("Content-Type")
@@ -103,7 +126,9 @@ def main(argv: list[str] | None = None) -> int:
     for source_id, source in SOURCES.items():
         destination = paths.RAW / str(source["file"])
         try:
-            body, content_type = fetch(str(source["url"]), args.timeout)
+            body, content_type = fetch(
+                str(source["url"]), source.get("headers"), args.timeout
+            )
             if not body:
                 raise ValueError("empty response")
             downloads[source_id] = (destination, body)

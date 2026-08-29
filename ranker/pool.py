@@ -1,7 +1,11 @@
 """The draft pool: pool.json rows as Player objects.
 
-The one value input is `points` — one-season projected points at 0.5/rec, which is
-this league's scoring. Draftsharks' 3D value is ignored entirely and
+The value input is GridironAI's projection distribution — `points` (the median
+one-season projection at 0.5/rec, this league's scoring) flanked by `points_low` and
+`points_high`, the provider's calibrated 10th/90th-percentile season outcomes.
+`points` is the one scalar the solver reads; rank.py reprices it to the wire plus the
+truncated expected value above the wire (value.reprice_with_uncertainty) before any
+board is built. Draftsharks' 3D value is ignored entirely and
 is not even carried into the pool: it is a provider-scaled ordinal that already bakes in
 someone else's roster assumptions, and it is not in points, so it cannot enter a
 points-denominated lineup objective. Kickers and IDP are already dropped upstream
@@ -14,7 +18,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from .league import POINTS_FIELD, POSITIONS
+from .league import POINTS_FIELD, POINTS_HIGH_FIELD, POINTS_LOW_FIELD, POSITIONS
 
 
 @dataclass(slots=True)
@@ -30,6 +34,13 @@ class Player:
     provider_adp: float | None
     sleeper_id: str | None = None  # the only key draft.json shares with the pool
     availability_index: int = 0  # rank on the opponents' consensus board, 0-based
+    # The projection quantiles around `points`, which starts as the median and is
+    # repriced to a certainty-equivalent; `points_base` keeps the untouched median.
+    # None when the provider published no quantiles (Sleeper-fallback players):
+    # the reprice then collapses the distribution to a point mass at the median.
+    points_low: float | None = None
+    points_high: float | None = None
+    points_base: float = 0.0
 
 
 def load_pool(path: Path) -> tuple[list[Player], dict]:
@@ -47,12 +58,24 @@ def load_pool(path: Path) -> tuple[list[Player], dict]:
         if rec["position"] not in POSITIONS:
             dropped["non_offense"] += 1
             continue
-        # Direct key access: a pool.json without the value column predates this league's
-        # scoring and must be rebuilt, not silently valued at zero.
+        # Direct key access: a pool.json without the value columns predates the
+        # GridironAI switch and must be rebuilt, not silently valued at zero.
+        # Null quantiles are a real value: a Sleeper-fallback player carries a
+        # median only, and both sides must agree about it.
         points = rec[POINTS_FIELD]
+        low, high = rec[POINTS_LOW_FIELD], rec[POINTS_HIGH_FIELD]
         if not points or points <= 0:
             dropped["zero_projection"].append(rec["name"])
             continue
+        if (low is None) != (high is None):
+            raise ValueError(
+                f"{rec['name']} has one quantile of two ({low}/{high}) — rebuild pool.json"
+            )
+        if low is not None and not low <= points <= high:
+            raise ValueError(
+                f"{rec['name']} has disordered projection quantiles "
+                f"{low}/{points}/{high} — rebuild pool.json"
+            )
         players.append(
             Player(
                 player_id=rec["player_id"],
@@ -65,6 +88,9 @@ def load_pool(path: Path) -> tuple[list[Player], dict]:
                 points=float(points),
                 provider_adp=rec.get("adp"),
                 sleeper_id=rec.get("sleeper_id"),
+                points_low=low,
+                points_high=high,
+                points_base=float(points),
             )
         )
 

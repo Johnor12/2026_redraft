@@ -45,8 +45,11 @@ data_source_investigator/ ────> data_source_matches.json
 
 The published files have distinct owners:
 
-- `pool.json`: ~220 QB/RB/WR/TE players keyed to Sleeper, priced by Sleeper's
-  league-scored season projections (identity and ADP from DraftSharks)
+- `pool.json`: ~380 QB/RB/WR/TE players keyed to Sleeper, priced by GridironAI's
+  league-scored projection distribution — median `points` plus `points_low`/
+  `points_high`, the 10th/90th-percentile season outcomes (identity and ADP from
+  DraftSharks). Players GridironAI doesn't list carry a scale-calibrated Sleeper
+  median with null quantiles
 - `draft.json`: all 130 made and pending picks from the ESPN league API, with made
   picks overlaid from a hand-pasted `draft_history.txt` during the live draft
   (ESPN's read API lags the draft room by minutes or more)
@@ -73,8 +76,12 @@ checks remain beside the draft, investigator, and ranker code they exercise. The
 meet through their published JSON contracts rather than shared orchestration.
 
 The ranker values a roster as expected optimal lineup points from one-season
-projections. Position-wide availability determines when depth is called on, and
-one unique final waiver body per position supplies the fallback. Personal and
+projections. Before any board is built it measures the projected post-draft wire on
+raw median projections, then reprices every player at the wire plus his truncated
+expected value above it (Swanson's 0.3/0.4/0.3 over the three quantiles) — a season
+below the wire is worth the wire, so early picks price near their median and late
+picks by their ceiling. Position-wide availability determines when depth is called
+on, and one unique final waiver body per position supplies the fallback. Personal and
 opponent strategies are intentionally separate: my slot uses the projection-based roster
 objective, while each opponent follows its inferred external board with roster-balance
 adjustments and fitted choice noise. Opponent picks never use my projections or board.
@@ -87,10 +94,10 @@ Rebuild the projection pool after saving updated provider HTML:
 uv run pool_pipeline/pipeline.py --report
 ```
 
-Re-price the pool after refetching Sleeper projections:
+Re-price the pool after saving a fresh GridironAI export (league scoring selected)
+into `pool_pipeline/data/`:
 
 ```bash
-uv run pool_pipeline/fetch_sleeper_projections.py
 uv run pool_pipeline/pipeline.py --report
 ```
 

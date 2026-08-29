@@ -3,10 +3,11 @@
 
 Four stages, in order:
 
-    1. parse_projections.py     html  -> json   full provider export, 900 players, 8 schemes
-    2. build_pool.py            json  -> json   this league's pool, one value column
-    3. match_sleeper.py         pool.json       adds each player's Sleeper id, in place
-    4. apply_sleeper_points.py  pool.json       re-prices points from sleeper_projections.json
+    1. parse_projections.py      html  -> json   full provider export, 900 players, 8 schemes
+    2. build_pool.py             json  -> json   this league's pool, one value column
+    3. match_sleeper.py          pool.json       adds each player's Sleeper id, in place
+    4. apply_gridiron_points.py  pool.json       re-prices points (+ low/high quantiles)
+                                                 from the GridironAI CSV export
 
 Everything the build reads and every intermediate it writes lives in this folder;
 the one file it publishes is ``pool.json`` at the repo root, which is what
@@ -16,18 +17,20 @@ Stage 1 is the faithful record of what the provider published and is never narro
 stage 2 is the narrow, draft-ready view. Keeping them separate is what makes stage 2
 re-runnable (different rank limit, different scoring) without re-parsing 8 MB of html,
 and what leaves the dropped columns recoverable. Stage 3 has to follow stage 2 because
-stage 2 rewrites pool.json from scratch, dropping the ids stage 3 adds; stage 4 joins
-on those ids, so it comes last.
+stage 2 rewrites pool.json from scratch, dropping the ids stage 3 adds. Stage 4 joins
+by name against the GridironAI export, so it can run any time after stage 2; it stays
+last so a rebuild ends priced.
 
 **Stages 3 and 4 never download.** Stage 3 joins against a cached copy of Sleeper's
 ~14 MB player dump, pulled by hand with ``fetch_sleeper.py`` — Sleeper asks for at most
 one call a day, and a roster of NFL players is not something a rebuild of local
-projections needs to re-ask for. With no dump present the stage warns and is skipped,
-which then fails stage 4 loudly: without ids there is nothing to join the projections
-on. Running ``--only sleeper`` makes the missing dump an error instead, since there the
-dump is the whole point of the run. Stage 4 reads the committed
-``data/sleeper_projections.json``, refreshed by hand with
-``fetch_sleeper_projections.py``.
+projections needs to re-ask for. With no dump present the stage warns and is skipped;
+the ids only link the pool to the live draft, so a rebuild still prices. Running
+``--only sleeper`` makes the missing dump an error instead, since there the dump is
+the whole point of the run. Stage 4 reads the newest hand-saved
+``data/gridironai-rankings-*.csv`` (exported with this league's scoring selected).
+``data/sleeper_projections.json`` no longer prices the pool: ``fetch_sleeper_projections.py``
+is kept because the investigator reads that file as the Sleeper ADP opponent board.
 
 All scripts remain usable as standalone CLIs — this only fixes the order and stops
 on the first failure.
@@ -52,7 +55,7 @@ import sys
 import time
 from pathlib import Path
 
-import apply_sleeper_points
+import apply_gridiron_points
 import build_pool
 import match_sleeper
 import parse_projections as parse
@@ -98,7 +101,7 @@ def main(argv: list[str] | None = None) -> int:
         "parse": (parse.main, [str(args.input), "-o", str(args.projections), *shared]),
         "pool": (build_pool.main, [str(args.projections), "-o", str(args.output), *shared]),
         "sleeper": (match_sleeper.main, sleeper_argv),
-        "points": (apply_sleeper_points.main, [str(args.output), *shared]),
+        "points": (apply_gridiron_points.main, [str(args.output), *shared]),
     }
     selected = [args.only] if args.only else list(STAGES)
 

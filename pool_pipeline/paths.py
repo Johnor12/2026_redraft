@@ -42,8 +42,19 @@ SLEEPER_PLAYERS = DATA_DIR / "sleeper_players.json"
 SLEEPER_META = DATA_DIR / "sleeper_players.meta.json"
 
 #: Sleeper/Rotowire season projections and ADP, scored with the league's own
-#: settings. Fetched by hand (``fetch_sleeper_projections.py``).
+#: settings. Fetched by hand (``fetch_sleeper_projections.py``). No longer prices
+#: the pool; the investigator reads it as the Sleeper ADP opponent board.
 SLEEPER_PROJECTIONS = DATA_DIR / "sleeper_projections.json"
+
+
+def gridiron_rankings() -> Path | None:
+    """The newest GridironAI rankings export, hand-saved from the site.
+
+    The site numbers refreshed exports (``-0``, ``-1``, ...), so the last one in sort
+    order is the latest. None when nothing has been saved yet.
+    """
+    exports = sorted(DATA_DIR.glob("gridironai-rankings-*.csv"))
+    return exports[-1] if exports else None
 
 #: The one published artifact.
 POOL = REPO_ROOT / "pool.json"

@@ -111,7 +111,12 @@ def build_rankings(
                 "age": p.age,
                 "bye_week": p.bye_week,
                 "is_rookie": p.is_rookie,
-                "points": p.points,
+                # The raw projection quantiles, for display; draft_points is the
+                # repriced scalar the board actually drafts off (wire + truncated EV).
+                "points": p.points_base,
+                "points_low": p.points_low,
+                "points_high": p.points_high,
+                "draft_points": round(p.points, 1),
                 "lineup_gain": round(gain[p.player_id], 1),
                 "sim_pick": sim_pick,
                 "sim_pick_label": pick_label(sim_pick) if sim_pick else None,

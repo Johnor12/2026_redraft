@@ -33,6 +33,20 @@ undrafted players only.
 
 ## Value model
 
+The value input is GridironAI's projection distribution: pool.json's `points` (the
+median season projection) with `points_low`/`points_high`, the calibrated 10th/90th-
+percentile outcomes. A first converge pass on the raw medians measures the projected
+post-draft wire, and `value.reprice_with_uncertainty` then reprices every player at
+the wire plus his truncated expected value above it (Swanson's 0.3/0.4/0.3 over the
+three quantiles): a season outcome below the wire is worth the wire, because the bust
+gets cut and the spot streams free agents. Everything downstream drafts off that one
+repriced scalar, so early picks price near their projection mean while late picks are
+priced almost entirely by their ceiling — the draft-upside-late behaviour falls out of
+the objective instead of being a round heuristic. A player with null quantiles (a
+Sleeper-fallback row, priced by a scale-calibrated Sleeper median) collapses to a
+point mass at his median and reprices to max(wire, median). The second converge pass
+and every reported value below are denominated in repriced points.
+
 The board is ranked by `lineup_gain`, each player's marginal expected-lineup value on
 my current roster at the converged wire levels.
 

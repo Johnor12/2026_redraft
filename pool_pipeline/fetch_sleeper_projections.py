@@ -15,6 +15,9 @@ Writes ``data/sleeper_projections.json``: the top 250 players by projected point
 across QB/RB/WR/TE/DEF (the page's sort), each with ``sleeper_id``, ``name``,
 ``position``, ``team``, ``points`` (league scoring), and ``adp`` (half-PPR
 redraft, the league's format; 999.0 is Sleeper's "undrafted" sentinel).
+
+The file no longer prices ``pool.json`` (GridironAI does, stage 4); it is kept
+because the data-source investigator reads it as the Sleeper ADP opponent board.
 """
 
 from __future__ import annotations

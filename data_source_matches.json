@@ -1,49 +1,56 @@
 {
-  "generated_at": "2026-08-29T14:31:19+00:00",
+  "generated_at": "2026-08-29T15:55:24+00:00",
   "draft": {
     "draft_id": "96498436",
-    "draft_fetched_at": "2026-08-29T14:31:19+00:00",
+    "draft_fetched_at": "2026-08-29T14:48:48+00:00",
     "draft_started_at": "2026-08-29T22:00:00+00:00",
     "picks_analyzed": 0
   },
   "ranking_snapshot": {
-    "generated_at": "2026-08-29T14:29:19+00:00",
-    "source_count": 7,
+    "generated_at": "2026-08-29T15:55:24+00:00",
+    "source_count": 8,
     "sources": [
       {
         "id": "fantasycalc",
         "name": "FantasyCalc",
         "format": "10-team redraft, 1 QB, 0.5 PPR",
-        "fetched_at": "2026-08-29T14:29:18+00:00",
+        "fetched_at": "2026-08-29T14:48:19+00:00",
         "player_count": 196
       },
       {
         "id": "keeptradecut",
         "name": "KeepTradeCut",
         "format": "redraft 1QB (KTC fantasy rankings); no TE premium",
-        "fetched_at": "2026-08-29T14:29:18+00:00",
+        "fetched_at": "2026-08-29T14:48:19+00:00",
         "player_count": 300
       },
       {
         "id": "ffcalculator",
         "name": "FF Calculator ADP",
         "format": "10-team half-PPR mock-draft ADP",
-        "fetched_at": "2026-08-29T14:29:18+00:00",
+        "fetched_at": "2026-08-29T14:48:19+00:00",
         "player_count": 192
       },
       {
         "id": "fantasypros",
         "name": "FantasyPros ECR",
         "format": "redraft half-PPR expert consensus",
-        "fetched_at": "2026-08-29T14:29:18+00:00",
+        "fetched_at": "2026-08-29T14:48:19+00:00",
         "player_count": 867
+      },
+      {
+        "id": "espn_adp",
+        "name": "ESPN ADP",
+        "format": "ESPN live-draft ADP across all ESPN leagues",
+        "fetched_at": "2026-08-29T14:48:19+00:00",
+        "player_count": 330
       },
       {
         "id": "draftsharks_adp",
         "name": "DraftSharks ADP",
         "format": "1QB half-PPR ADP from pool.json",
         "fetched_at": null,
-        "player_count": 217
+        "player_count": 382
       },
       {
         "id": "sleeper_adp",
@@ -55,9 +62,9 @@
       {
         "id": "consensus",
         "name": "Consensus Average",
-        "format": "mean provider rank across the other 6 sources",
+        "format": "mean provider rank across the other 7 sources",
         "fetched_at": null,
-        "player_count": 217
+        "player_count": 382
       }
     ]
   },

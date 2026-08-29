@@ -31,6 +31,7 @@ from . import league
 from .league import (
     DEDICATED_SLOTS,
     POSITIONS,
+    QUANTILE_WEIGHTS,
     SLOT_CHAIN,
     STARTING_SLOTS,
     UNAVAILABLE_RATE,
@@ -349,6 +350,37 @@ def seed_wire(players: list[Player]) -> dict[str, float]:
                 used[p.position] += 1
                 break
     return {k: _rep_at_rank(pos[k], used[k] + 1) for k in POSITIONS}
+
+
+def reprice_with_uncertainty(players: list[Player], baseline: dict[str, float]) -> None:
+    """Reprice every player at the wire plus his truncated expected value above it.
+
+    `baseline` is the projected post-draft wire in raw median points (a converge pass
+    over the untransformed pool). Each player's three projection quantiles collapse,
+    with Swanson's weights, into the wire plus E[max(0, season outcome - wire)]:
+
+        points <- R + 0.3*max(0, low-R) + 0.4*max(0, median-R) + 0.3*max(0, high-R)
+
+    A season outcome below the wire is worth the wire — the bust gets cut and the spot
+    streams free agents — so a player's marginal value over a wire body priced at R is
+    exactly his truncated expected value above the baseline. Near the top of the pool
+    this is close to the projection's mean; at the bottom the median-world terms vanish
+    and only the ceiling prices the pick, which is why late-round value chases upside
+    without any round heuristic. A player with no published quantiles (a
+    Sleeper-fallback row) collapses to a point mass at his median: max(wire, median).
+    Idempotent: reads only the untouched quantiles.
+    """
+    w_low, w_mid, w_high = QUANTILE_WEIGHTS
+    for p in players:
+        r = baseline[p.position]
+        low = p.points_low if p.points_low is not None else p.points_base
+        high = p.points_high if p.points_high is not None else p.points_base
+        p.points = (
+            r
+            + w_low * max(0.0, low - r)
+            + w_mid * max(0.0, p.points_base - r)
+            + w_high * max(0.0, high - r)
+        )
 
 
 def wire_replacement(

@@ -14,7 +14,10 @@ from .league import (
     OPPONENT_DEPTH_PENALTY,
     OPPONENT_DEPTH_TARGETS,
     POINTS_FIELD,
+    POINTS_HIGH_FIELD,
+    POINTS_LOW_FIELD,
     POSITIONS,
+    QUANTILE_WEIGHTS,
     SCHEME,
     STARTING_SLOTS,
     SURVIVAL_SIGMA,
@@ -111,7 +114,7 @@ def example_rosters(draft: Draft, board: Board) -> list[dict]:
                     "age": p.age,
                     "bye_week": p.bye_week,
                     "is_rookie": p.is_rookie,
-                    "points": p.points,
+                    "points": p.points_base,  # the raw median, what the dashboard sums
                     "off_pool": False,
                 }
             )
@@ -157,6 +160,7 @@ def build_payload(
     noise: float,
     seed: int,
     opponents: dict[int, OpponentStrategy],
+    baseline: dict[str, float],
     option_redraw: dict | None = None,
     rollout: dict | None = None,
     survival: dict[int, dict[int, float]] | None = None,
@@ -164,15 +168,36 @@ def build_payload(
     return {
         "generated_from": pool_meta["source_file"],
         "scoring_scheme": SCHEME,
-        "value_input": f"pool.json {POINTS_FIELD} ({SCHEME})",
+        "value_input": (
+            f"pool.json {POINTS_FIELD}/{POINTS_LOW_FIELD}/{POINTS_HIGH_FIELD} ({SCHEME})"
+        ),
         "value_note": (
-            "One-season projected points in this league's scoring (0.5/rec, no TE "
-            "premium). Roster value is the best expected legal lineup, including the "
-            "probability that deeper players are called on when higher teammates are "
-            "unavailable and one unique waiver body per position. Draftsharks' 3D value "
+            "GridironAI's one-season projection distribution in this league's scoring "
+            "(0.5/rec, no TE premium): points is the median, points_low/points_high the "
+            "calibrated 10th/90th-percentile outcomes. A first converge pass on the raw "
+            "medians measures the projected post-draft wire, then every player is "
+            "repriced at the wire plus his truncated expected value above it (Swanson's "
+            "0.3/0.4/0.3 over the three quantiles) — a season below the wire is worth "
+            "the wire, so late picks are priced by their ceiling and early picks near "
+            "their mean. Players GridironAI does not list carry a scale-calibrated "
+            "Sleeper median with null quantiles and are priced from the median alone: "
+            "max(wire, median). draft_points is that repriced scalar; every value below "
+            "is denominated in it. Roster value is the best expected legal lineup, "
+            "including the probability that deeper players are called on when higher "
+            "teammates are unavailable and one unique waiver body per position. "
+            "Draftsharks' 3D value "
             "is deliberately unused: it is a provider-scaled ordinal, not points, so it "
             "cannot enter a points-denominated lineup objective."
         ),
+        "projection_uncertainty": {
+            "quantile_weights": list(QUANTILE_WEIGHTS),
+            "baseline_wire_median_points": {k: round(v, 1) for k, v in baseline.items()},
+            "note": (
+                "baseline_wire_median_points is the post-draft wire measured on raw "
+                "median projections (pass 1); wire.levels below is the pass-2 wire in "
+                "repriced draft_points units."
+            ),
+        },
         "league": {
             "teams": league.TEAMS,
             "starting_slots": STARTING_SLOTS,

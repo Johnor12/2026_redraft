@@ -7,9 +7,15 @@
     uv run rank.py --selftest              # verify solver, opponents, and board loader
 
 Scope is this league and nothing else; the league constants and strategy knobs live in
-ranker/league.py. The value input is `points` from `pool.json` — one-season projected
-points in this league's 0.5 PPR scoring (see ranker/pool.py for why the provider's 3D
-value is deliberately unused). The method, in one breath: what the waiver wire holds
+ranker/league.py. The value input is `pool.json`'s projection distribution — `points`
+(GridironAI's median one-season projection in this league's 0.5 PPR scoring) with
+`points_low`/`points_high`, the provider's calibrated 10th/90th-percentile outcomes
+(see ranker/pool.py for why the provider's 3D value is deliberately unused). A first
+converge pass on the raw medians measures the projected post-draft wire, and every
+player is then repriced at the wire plus his truncated expected value above it
+(`ranker/value.reprice_with_uncertainty`) — the scalar the rest of the run drafts off,
+so early picks are priced near their median and late picks by their ceiling, with no
+round heuristic. The method, in one breath: what the waiver wire holds
 after the draft is an *outcome* of how the league drafts, so wire levels are measured
 from the converged draft and feed valuation, while my roster is valued as expected
 optimal lineup points under position-wide availability with one unique waiver fallback
@@ -63,6 +69,7 @@ from ranker.rankings import build_rankings
 from ranker.report import report_board, report_summary
 from ranker.selftest import selftest
 from ranker.validate import validate
+from ranker.value import reprice_with_uncertainty
 
 REPO_ROOT = Path(__file__).resolve().parent
 SOURCE_MATCHES = REPO_ROOT / "data_source_matches.json"
@@ -172,8 +179,17 @@ def main(argv: list[str] | None = None) -> int:
                 f"loss {strategy.mean_log2_loss:.3f}",
                 file=sys.stderr,
             )
-        print("converging wire levels:", file=sys.stderr)
+        print("baseline wire from median projections:", file=sys.stderr)
 
+    # Pass 1: converge on the raw medians to measure the projected post-draft wire,
+    # then reprice every player at that wire plus his truncated expected value above
+    # it. Pass 2 (and everything after) drafts off the repriced scalar; its own wire
+    # levels are re-converged in the repriced units.
+    baseline, _, _ = converge(players, board, args.report, opponents)
+    reprice_with_uncertainty(players, baseline)
+
+    if args.report:
+        print("converging wire levels:", file=sys.stderr)
     stream, draft, history = converge(players, board, args.report, opponents)
     draft = broaden_first_pick(draft, players, board, stream, opponents)
 
@@ -251,7 +267,7 @@ def main(argv: list[str] | None = None) -> int:
     problems = board_problems + validate(rows, players, stream, draft, board, history)
     payload = build_payload(
         players, pool_meta, board, stream, draft, history, rows, problems,
-        args.sims, args.noise, args.seed, opponents, options, rolled, survival,
+        args.sims, args.noise, args.seed, opponents, baseline, options, rolled, survival,
     )
     args.output.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
 

@@ -120,11 +120,44 @@ def parse_fantasypros(path: Path) -> list[dict]:
     return result
 
 
+#: ESPN defaultPositionId -> pool position; K (5), D/ST (16), and IDP ids are dropped.
+ESPN_POSITION = {1: "QB", 2: "RB", 3: "WR", 4: "TE"}
+
+#: ESPN proTeamId -> Sleeper's team abbreviation (the draft pipeline keeps the same table).
+ESPN_TEAM_ABBREV = {
+    1: "ATL", 2: "BUF", 3: "CHI", 4: "CIN", 5: "CLE", 6: "DAL", 7: "DEN", 8: "DET",
+    9: "GB", 10: "TEN", 11: "IND", 12: "KC", 13: "LV", 14: "LAR", 15: "MIA", 16: "MIN",
+    17: "NE", 18: "NO", 19: "NYG", 20: "NYJ", 21: "PHI", 22: "ARI", 23: "PIT", 24: "LAC",
+    25: "SF", 26: "SEA", 27: "TB", 28: "WAS", 29: "CAR", 30: "JAX", 33: "BAL", 34: "HOU",
+}
+
+
+def parse_espn_adp(path: Path) -> list[dict]:
+    """ESPN's live-draft ADP from the public kona_player_info view: rank by ADP ascending."""
+    data = json.loads(path.read_text())
+    rows = []
+    for raw in data["players"]:
+        info = raw["player"]
+        position = ESPN_POSITION.get(info["defaultPositionId"])
+        adp = (info.get("ownership") or {}).get("averageDraftPosition")
+        if position is None or not adp:
+            continue
+        rows.append(
+            (round(adp, 2), info["fullName"], position, ESPN_TEAM_ABBREV.get(info["proTeamId"]))
+        )
+    rows.sort(key=lambda row: (row[0], row[1]))
+    return [
+        player(rank, name, position, team, adp)
+        for rank, (adp, name, position, team) in enumerate(rows, start=1)
+    ]
+
+
 PARSERS: dict[str, tuple[str, str, Callable[[Path], list[dict]]]] = {
     "fantasycalc": ("FantasyCalc", "fantasycalc.json", parse_fantasycalc),
     "keeptradecut": ("KeepTradeCut", "keeptradecut.html", parse_keeptradecut),
     "ffcalculator": ("FF Calculator ADP", "ffcalculator.json", parse_ffcalculator),
     "fantasypros": ("FantasyPros ECR", "fantasypros.html", parse_fantasypros),
+    "espn_adp": ("ESPN ADP", "espn_adp.json", parse_espn_adp),
 }
 
 

@@ -15,8 +15,9 @@ uv run serve.py  # open http://127.0.0.1:8123/data_source_investigator/
 
 The built-in comparisons are FantasyCalc redraft (10-team, 1 QB, 0.5 PPR), KeepTradeCut's
 redraft 1QB board, FantasyFootballCalculator's 10-team half-PPR mock-draft ADP,
-FantasyPros half-PPR ECR, the DraftSharks 1QB ADP already in `pool.json`, Sleeper's
-half-PPR ADP from `pool_pipeline/data/sleeper_projections.json`, and a derived
+FantasyPros half-PPR ECR, ESPN's live-draft ADP across all ESPN leagues, the DraftSharks
+1QB ADP already in `pool.json`, Sleeper's half-PPR ADP from
+`pool_pipeline/data/sleeper_projections.json`, and a derived
 consensus board averaging each pool player's rank across every other source (manual
 boards included). The consensus board is also the ranker's opponent fallback: it
 models opponents before they have picked and completes each provider's uncovered tail.
