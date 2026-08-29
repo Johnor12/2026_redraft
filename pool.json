@@ -285,6 +285,20 @@
     {
       "rank": 18,
       "positional_rank": 16,
+      "player_id": 10217,
+      "sleeper_id": "5849",
+      "name": "Kyler Murray",
+      "position": "QB",
+      "team": "MIN",
+      "age": 28.9,
+      "bye_week": 6,
+      "is_rookie": false,
+      "points": 273.06,
+      "adp": 235
+    },
+    {
+      "rank": 19,
+      "positional_rank": 17,
       "player_id": 2,
       "sleeper_id": "421",
       "name": "Matthew Stafford",
@@ -297,8 +311,8 @@
       "adp": 162
     },
     {
-      "rank": 19,
-      "positional_rank": 17,
+      "rank": 20,
+      "positional_rank": 18,
       "player_id": 10489,
       "sleeper_id": "6804",
       "name": "Jordan Love",
@@ -309,20 +323,6 @@
       "is_rookie": false,
       "points": 268.52,
       "adp": 157
-    },
-    {
-      "rank": 20,
-      "positional_rank": 18,
-      "player_id": 10217,
-      "sleeper_id": "5849",
-      "name": "Kyler Murray",
-      "position": "QB",
-      "team": "MIN",
-      "age": 28.9,
-      "bye_week": 6,
-      "is_rookie": false,
-      "points": 265.66,
-      "adp": 235
     },
     {
       "rank": 21,
@@ -495,20 +495,6 @@
     {
       "rank": 33,
       "positional_rank": 7,
-      "player_id": 35317,
-      "sleeper_id": "12527",
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LVR",
-      "age": 22.7,
-      "bye_week": 13,
-      "is_rookie": false,
-      "points": 234.5,
-      "adp": 14
-    },
-    {
-      "rank": 34,
-      "positional_rank": 8,
       "player_id": 13563,
       "sleeper_id": "9226",
       "name": "De'Von Achane",
@@ -521,8 +507,8 @@
       "adp": 19
     },
     {
-      "rank": 35,
-      "positional_rank": 9,
+      "rank": 34,
+      "positional_rank": 8,
       "player_id": 9994,
       "sleeper_id": "4866",
       "name": "Saquon Barkley",
@@ -535,7 +521,7 @@
       "adp": 47
     },
     {
-      "rank": 36,
+      "rank": 35,
       "positional_rank": 4,
       "player_id": 10783,
       "sleeper_id": "7547",
@@ -549,8 +535,8 @@
       "adp": 7
     },
     {
-      "rank": 37,
-      "positional_rank": 10,
+      "rank": 36,
+      "positional_rank": 9,
       "player_id": 13586,
       "sleeper_id": "9224",
       "name": "Chase Brown",
@@ -563,8 +549,8 @@
       "adp": 33
     },
     {
-      "rank": 38,
-      "positional_rank": 11,
+      "rank": 37,
+      "positional_rank": 10,
       "player_id": 12579,
       "sleeper_id": "8151",
       "name": "Kenneth Walker III",
@@ -577,7 +563,7 @@
       "adp": 38
     },
     {
-      "rank": 39,
+      "rank": 38,
       "positional_rank": 24,
       "player_id": 13540,
       "sleeper_id": "9228",
@@ -591,7 +577,7 @@
       "adp": 198
     },
     {
-      "rank": 40,
+      "rank": 39,
       "positional_rank": 5,
       "player_id": 10590,
       "sleeper_id": "6786",
@@ -605,7 +591,7 @@
       "adp": 18
     },
     {
-      "rank": 41,
+      "rank": 40,
       "positional_rank": 6,
       "player_id": 10796,
       "sleeper_id": "7569",
@@ -619,8 +605,8 @@
       "adp": 28
     },
     {
-      "rank": 42,
-      "positional_rank": 12,
+      "rank": 41,
+      "positional_rank": 11,
       "player_id": 35318,
       "sleeper_id": "12507",
       "name": "Omarion Hampton",
@@ -633,7 +619,7 @@
       "adp": 20
     },
     {
-      "rank": 43,
+      "rank": 42,
       "positional_rank": 25,
       "player_id": 35310,
       "sleeper_id": "12522",
@@ -647,7 +633,7 @@
       "adp": 241
     },
     {
-      "rank": 44,
+      "rank": 43,
       "positional_rank": 26,
       "player_id": 10225,
       "sleeper_id": "5870",
@@ -659,6 +645,20 @@
       "is_rookie": false,
       "points": 212.54,
       "adp": 161
+    },
+    {
+      "rank": 44,
+      "positional_rank": 12,
+      "player_id": 35317,
+      "sleeper_id": "12527",
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LVR",
+      "age": 22.7,
+      "bye_week": 13,
+      "is_rookie": false,
+      "points": 211.4,
+      "adp": 14
     },
     {
       "rank": 45,
@@ -774,6 +774,20 @@
     },
     {
       "rank": 53,
+      "positional_rank": 12,
+      "player_id": 34977,
+      "sleeper_id": "11632",
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "age": 23,
+      "bye_week": 8,
+      "is_rookie": false,
+      "points": 193.7,
+      "adp": 8
+    },
+    {
+      "rank": 54,
       "positional_rank": 13,
       "player_id": 12577,
       "sleeper_id": "8155",
@@ -787,7 +801,7 @@
       "adp": 39
     },
     {
-      "rank": 54,
+      "rank": 55,
       "positional_rank": 14,
       "player_id": 12580,
       "sleeper_id": "8150",
@@ -801,7 +815,7 @@
       "adp": 57
     },
     {
-      "rank": 55,
+      "rank": 56,
       "positional_rank": 15,
       "player_id": 10194,
       "sleeper_id": "5892",
@@ -815,7 +829,7 @@
       "adp": 93
     },
     {
-      "rank": 56,
+      "rank": 57,
       "positional_rank": 16,
       "player_id": 10757,
       "sleeper_id": "7543",
@@ -829,7 +843,7 @@
       "adp": 66
     },
     {
-      "rank": 57,
+      "rank": 58,
       "positional_rank": 17,
       "player_id": 10476,
       "sleeper_id": "6790",
@@ -843,8 +857,8 @@
       "adp": 84
     },
     {
-      "rank": 58,
-      "positional_rank": 12,
+      "rank": 59,
+      "positional_rank": 13,
       "player_id": 10773,
       "sleeper_id": "7525",
       "name": "DeVonta Smith",
@@ -857,7 +871,7 @@
       "adp": 67
     },
     {
-      "rank": 59,
+      "rank": 60,
       "positional_rank": 18,
       "player_id": 10759,
       "sleeper_id": "7588",
@@ -871,7 +885,7 @@
       "adp": 63
     },
     {
-      "rank": 60,
+      "rank": 61,
       "positional_rank": 19,
       "player_id": 35925,
       "sleeper_id": "13287",
@@ -885,8 +899,8 @@
       "adp": 16
     },
     {
-      "rank": 61,
-      "positional_rank": 13,
+      "rank": 62,
+      "positional_rank": 14,
       "player_id": 13550,
       "sleeper_id": "9997",
       "name": "Zay Flowers",
@@ -899,8 +913,8 @@
       "adp": 58
     },
     {
-      "rank": 62,
-      "positional_rank": 14,
+      "rank": 63,
+      "positional_rank": 15,
       "player_id": 35015,
       "sleeper_id": "11635",
       "name": "Ladd McConkey",
@@ -913,8 +927,8 @@
       "adp": 36
     },
     {
-      "rank": 63,
-      "positional_rank": 15,
+      "rank": 64,
+      "positional_rank": 16,
       "player_id": 6938,
       "sleeper_id": "2216",
       "name": "Mike Evans",
@@ -927,8 +941,8 @@
       "adp": 106
     },
     {
-      "rank": 64,
-      "positional_rank": 16,
+      "rank": 65,
+      "positional_rank": 17,
       "player_id": 10607,
       "sleeper_id": "6801",
       "name": "Tee Higgins",
@@ -941,7 +955,7 @@
       "adp": 54
     },
     {
-      "rank": 65,
+      "rank": 66,
       "positional_rank": 2,
       "player_id": 12587,
       "sleeper_id": "8130",
@@ -953,20 +967,6 @@
       "is_rookie": false,
       "points": 186.9,
       "adp": 12
-    },
-    {
-      "rank": 66,
-      "positional_rank": 17,
-      "player_id": 34977,
-      "sleeper_id": "11632",
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "age": 23,
-      "bye_week": 8,
-      "is_rookie": false,
-      "points": 186.3,
-      "adp": 8
     },
     {
       "rank": 67,
@@ -1768,6 +1768,20 @@
     },
     {
       "rank": 124,
+      "positional_rank": 31,
+      "player_id": 34983,
+      "sleeper_id": "11559",
+      "name": "Michael Penix Jr.",
+      "position": "QB",
+      "team": "ATL",
+      "age": 26.2,
+      "bye_week": 11,
+      "is_rookie": false,
+      "points": 135.16,
+      "adp": 152
+    },
+    {
+      "rank": 125,
       "positional_rank": 49,
       "player_id": 13545,
       "sleeper_id": "9754",
@@ -1781,7 +1795,7 @@
       "adp": 109
     },
     {
-      "rank": 125,
+      "rank": 126,
       "positional_rank": 50,
       "player_id": 35021,
       "sleeper_id": "11624",
@@ -1795,7 +1809,7 @@
       "adp": 116
     },
     {
-      "rank": 126,
+      "rank": 127,
       "positional_rank": 51,
       "player_id": 12606,
       "sleeper_id": "8121",
@@ -1809,7 +1823,7 @@
       "adp": 120
     },
     {
-      "rank": 127,
+      "rank": 128,
       "positional_rank": 11,
       "player_id": 10009,
       "sleeper_id": "5012",
@@ -1823,7 +1837,7 @@
       "adp": 140
     },
     {
-      "rank": 128,
+      "rank": 129,
       "positional_rank": 12,
       "player_id": 13573,
       "sleeper_id": "10236",
@@ -1835,20 +1849,6 @@
       "is_rookie": false,
       "points": 130.6,
       "adp": 85
-    },
-    {
-      "rank": 129,
-      "positional_rank": 31,
-      "player_id": 10483,
-      "sleeper_id": "6768",
-      "name": "Tua Tagovailoa",
-      "position": "QB",
-      "team": "ATL",
-      "age": 28.4,
-      "bye_week": 11,
-      "is_rookie": false,
-      "points": 129.94,
-      "adp": 329
     },
     {
       "rank": 130,
@@ -2034,6 +2034,20 @@
     },
     {
       "rank": 143,
+      "positional_rank": 18,
+      "player_id": 10059,
+      "sleeper_id": "5001",
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "team": "HOU",
+      "age": 30,
+      "bye_week": 8,
+      "is_rookie": false,
+      "points": 118.9,
+      "adp": 164
+    },
+    {
+      "rank": 144,
       "positional_rank": 41,
       "player_id": 35720,
       "sleeper_id": "12533",
@@ -2047,7 +2061,7 @@
       "adp": 137
     },
     {
-      "rank": 144,
+      "rank": 145,
       "positional_rank": 55,
       "player_id": 13347,
       "sleeper_id": "8676",
@@ -2061,8 +2075,8 @@
       "adp": 156
     },
     {
-      "rank": 145,
-      "positional_rank": 18,
+      "rank": 146,
+      "positional_rank": 19,
       "player_id": 35532,
       "sleeper_id": "12493",
       "name": "Oronde Gadsden II",
@@ -2075,8 +2089,8 @@
       "adp": 74
     },
     {
-      "rank": 146,
-      "positional_rank": 19,
+      "rank": 147,
+      "positional_rank": 20,
       "player_id": 12711,
       "sleeper_id": "8210",
       "name": "Chigoziem Okonkwo",
@@ -2089,8 +2103,8 @@
       "adp": 169
     },
     {
-      "rank": 147,
-      "positional_rank": 20,
+      "rank": 148,
+      "positional_rank": 21,
       "player_id": 35009,
       "sleeper_id": "11603",
       "name": "AJ Barner",
@@ -2103,8 +2117,8 @@
       "adp": 134
     },
     {
-      "rank": 148,
-      "positional_rank": 21,
+      "rank": 149,
+      "positional_rank": 22,
       "player_id": 12426,
       "sleeper_id": "7002",
       "name": "Juwan Johnson",
@@ -2117,7 +2131,7 @@
       "adp": 131
     },
     {
-      "rank": 149,
+      "rank": 150,
       "positional_rank": 42,
       "player_id": 12583,
       "sleeper_id": "8136",
@@ -2129,20 +2143,6 @@
       "is_rookie": false,
       "points": 111.1,
       "adp": 167
-    },
-    {
-      "rank": 150,
-      "positional_rank": 22,
-      "player_id": 10059,
-      "sleeper_id": "5001",
-      "name": "Dalton Schultz",
-      "position": "TE",
-      "team": "HOU",
-      "age": 30,
-      "bye_week": 8,
-      "is_rookie": false,
-      "points": 110.2,
-      "adp": 164
     },
     {
       "rank": 151,
@@ -2231,6 +2231,20 @@
     {
       "rank": 157,
       "positional_rank": 61,
+      "player_id": 13582,
+      "sleeper_id": "9504",
+      "name": "Kayshon Boutte",
+      "position": "WR",
+      "team": "NE",
+      "age": 24.2,
+      "bye_week": 11,
+      "is_rookie": false,
+      "points": 104.7,
+      "adp": 168
+    },
+    {
+      "rank": 158,
+      "positional_rank": 62,
       "player_id": 35970,
       "sleeper_id": "13276",
       "name": "Omar Cooper Jr.",
@@ -2243,22 +2257,8 @@
       "adp": 79
     },
     {
-      "rank": 158,
-      "positional_rank": 32,
-      "player_id": 34983,
-      "sleeper_id": "11559",
-      "name": "Michael Penix Jr.",
-      "position": "QB",
-      "team": "ATL",
-      "age": 26.2,
-      "bye_week": 11,
-      "is_rookie": false,
-      "points": 103.38,
-      "adp": 152
-    },
-    {
       "rank": 159,
-      "positional_rank": 62,
+      "positional_rank": 63,
       "player_id": 13739,
       "sleeper_id": "10213",
       "name": "Tre Tucker",
@@ -2328,7 +2328,7 @@
     },
     {
       "rank": 164,
-      "positional_rank": 63,
+      "positional_rank": 64,
       "player_id": 10598,
       "sleeper_id": "6783",
       "name": "Jerry Jeudy",
@@ -2342,7 +2342,7 @@
     },
     {
       "rank": 165,
-      "positional_rank": 64,
+      "positional_rank": 65,
       "player_id": 35132,
       "sleeper_id": "11783",
       "name": "Ryan Flournoy",
@@ -2370,7 +2370,7 @@
     },
     {
       "rank": 167,
-      "positional_rank": 33,
+      "positional_rank": 32,
       "player_id": 7744,
       "sleeper_id": "4017",
       "name": "Deshaun Watson",
@@ -2398,20 +2398,6 @@
     },
     {
       "rank": 169,
-      "positional_rank": 65,
-      "player_id": 13552,
-      "sleeper_id": "9502",
-      "name": "Nathaniel Dell",
-      "position": "WR",
-      "team": "HOU",
-      "age": 26.8,
-      "bye_week": 8,
-      "is_rookie": false,
-      "points": 95.3,
-      "adp": 200
-    },
-    {
-      "rank": 170,
       "positional_rank": 66,
       "player_id": 35339,
       "sleeper_id": "12509",
@@ -2425,22 +2411,8 @@
       "adp": 150
     },
     {
-      "rank": 171,
-      "positional_rank": 67,
-      "player_id": 35357,
-      "sleeper_id": "12536",
-      "name": "Jaylin Noel",
-      "position": "WR",
-      "team": "HOU",
-      "age": 23.9,
-      "bye_week": 8,
-      "is_rookie": false,
-      "points": 92.9,
-      "adp": 193
-    },
-    {
-      "rank": 172,
-      "positional_rank": 34,
+      "rank": 170,
+      "positional_rank": 33,
       "player_id": 35309,
       "sleeper_id": "12524",
       "name": "Shedeur Sanders",
@@ -2453,8 +2425,8 @@
       "adp": 279
     },
     {
-      "rank": 173,
-      "positional_rank": 68,
+      "rank": 171,
+      "positional_rank": 67,
       "player_id": 35947,
       "sleeper_id": "13281",
       "name": "Jordyn Tyson",
@@ -2467,8 +2439,8 @@
       "adp": 48
     },
     {
-      "rank": 174,
-      "positional_rank": 69,
+      "rank": 172,
+      "positional_rank": 68,
       "player_id": 35134,
       "sleeper_id": "11834",
       "name": "Devaughn Vele",
@@ -2481,8 +2453,22 @@
       "adp": 247
     },
     {
-      "rank": 175,
+      "rank": 173,
       "positional_rank": 45,
+      "player_id": 35935,
+      "sleeper_id": "13305",
+      "name": "Mike Washington Jr.",
+      "position": "RB",
+      "team": "LVR",
+      "age": 23.2,
+      "bye_week": 13,
+      "is_rookie": true,
+      "points": 89.5,
+      "adp": 213
+    },
+    {
+      "rank": 174,
+      "positional_rank": 46,
       "player_id": 13674,
       "sleeper_id": "9511",
       "name": "Keaton Mitchell",
@@ -2495,7 +2481,7 @@
       "adp": 205
     },
     {
-      "rank": 176,
+      "rank": 175,
       "positional_rank": 28,
       "player_id": 12615,
       "sleeper_id": "8172",
@@ -2509,8 +2495,8 @@
       "adp": 925
     },
     {
-      "rank": 177,
-      "positional_rank": 70,
+      "rank": 176,
+      "positional_rank": 69,
       "player_id": 35955,
       "sleeper_id": "13293",
       "name": "Ja'Kobi Lane",
@@ -2523,8 +2509,22 @@
       "adp": 195
     },
     {
+      "rank": 177,
+      "positional_rank": 34,
+      "player_id": 10483,
+      "sleeper_id": "6768",
+      "name": "Tua Tagovailoa",
+      "position": "QB",
+      "team": "ATL",
+      "age": 28.4,
+      "bye_week": 11,
+      "is_rookie": false,
+      "points": 86.96,
+      "adp": 329
+    },
+    {
       "rank": 178,
-      "positional_rank": 71,
+      "positional_rank": 70,
       "player_id": 12430,
       "sleeper_id": "7049",
       "name": "Jauan Jennings",
@@ -2538,6 +2538,20 @@
     },
     {
       "rank": 179,
+      "positional_rank": 71,
+      "player_id": 35961,
+      "sleeper_id": "13285",
+      "name": "Malachi Fields",
+      "position": "WR",
+      "team": "NYG",
+      "age": 22.9,
+      "bye_week": 8,
+      "is_rookie": true,
+      "points": 86.2,
+      "adp": 181
+    },
+    {
+      "rank": 180,
       "positional_rank": 72,
       "player_id": 6678,
       "sleeper_id": "1479",
@@ -2551,7 +2565,7 @@
       "adp": 287
     },
     {
-      "rank": 180,
+      "rank": 181,
       "positional_rank": 73,
       "player_id": 10776,
       "sleeper_id": "7571",
@@ -2565,7 +2579,7 @@
       "adp": 263
     },
     {
-      "rank": 181,
+      "rank": 182,
       "positional_rank": 29,
       "player_id": 10008,
       "sleeper_id": "4993",
@@ -2579,7 +2593,7 @@
       "adp": 273
     },
     {
-      "rank": 182,
+      "rank": 183,
       "positional_rank": 30,
       "player_id": 35364,
       "sleeper_id": "12487",
@@ -2593,7 +2607,7 @@
       "adp": 148
     },
     {
-      "rank": 183,
+      "rank": 184,
       "positional_rank": 74,
       "player_id": 35953,
       "sleeper_id": "13274",
@@ -2607,7 +2621,7 @@
       "adp": 122
     },
     {
-      "rank": 184,
+      "rank": 185,
       "positional_rank": 75,
       "player_id": 35018,
       "sleeper_id": "11625",
@@ -2621,7 +2635,7 @@
       "adp": 185
     },
     {
-      "rank": 185,
+      "rank": 186,
       "positional_rank": 31,
       "player_id": 35973,
       "sleeper_id": "13330",
@@ -2635,7 +2649,7 @@
       "adp": 87
     },
     {
-      "rank": 186,
+      "rank": 187,
       "positional_rank": 76,
       "player_id": 35963,
       "sleeper_id": "13317",
@@ -2649,22 +2663,8 @@
       "adp": 189
     },
     {
-      "rank": 187,
-      "positional_rank": 77,
-      "player_id": 13582,
-      "sleeper_id": "9504",
-      "name": "Kayshon Boutte",
-      "position": "WR",
-      "team": "NE",
-      "age": 24.2,
-      "bye_week": 11,
-      "is_rookie": false,
-      "points": 79.1,
-      "adp": 168
-    },
-    {
       "rank": 188,
-      "positional_rank": 78,
+      "positional_rank": 77,
       "player_id": 35371,
       "sleeper_id": "12530",
       "name": "Travis Hunter",
@@ -2678,7 +2678,7 @@
     },
     {
       "rank": 189,
-      "positional_rank": 79,
+      "positional_rank": 78,
       "player_id": 35355,
       "sleeper_id": "12492",
       "name": "Pat Bryant",
@@ -2692,7 +2692,7 @@
     },
     {
       "rank": 190,
-      "positional_rank": 80,
+      "positional_rank": 79,
       "player_id": 35990,
       "sleeper_id": "13296",
       "name": "Caleb Douglas",
@@ -2706,7 +2706,7 @@
     },
     {
       "rank": 191,
-      "positional_rank": 81,
+      "positional_rank": 80,
       "player_id": 36031,
       "sleeper_id": "13413",
       "name": "Cyrus Allen",
@@ -2720,7 +2720,7 @@
     },
     {
       "rank": 192,
-      "positional_rank": 46,
+      "positional_rank": 47,
       "player_id": 35390,
       "sleeper_id": "12469",
       "name": "Dylan Sampson",
@@ -2734,7 +2734,7 @@
     },
     {
       "rank": 193,
-      "positional_rank": 82,
+      "positional_rank": 81,
       "player_id": 7572,
       "sleeper_id": "3321",
       "name": "Tyreek Hill",
@@ -2748,7 +2748,7 @@
     },
     {
       "rank": 194,
-      "positional_rank": 83,
+      "positional_rank": 82,
       "player_id": 35349,
       "sleeper_id": "12497",
       "name": "Tory Horton",
@@ -2776,7 +2776,7 @@
     },
     {
       "rank": 196,
-      "positional_rank": 84,
+      "positional_rank": 83,
       "player_id": 13583,
       "sleeper_id": "10226",
       "name": "Andrei Iosivas",
@@ -2790,21 +2790,7 @@
     },
     {
       "rank": 197,
-      "positional_rank": 85,
-      "player_id": 35961,
-      "sleeper_id": "13285",
-      "name": "Malachi Fields",
-      "position": "WR",
-      "team": "NYG",
-      "age": 22.9,
-      "bye_week": 8,
-      "is_rookie": true,
-      "points": 75.0,
-      "adp": 181
-    },
-    {
-      "rank": 198,
-      "positional_rank": 47,
+      "positional_rank": 48,
       "player_id": 35328,
       "sleeper_id": "12474",
       "name": "Woody Marks",
@@ -2817,8 +2803,8 @@
       "adp": 132
     },
     {
-      "rank": 199,
-      "positional_rank": 86,
+      "rank": 198,
+      "positional_rank": 84,
       "player_id": 35572,
       "sleeper_id": "12535",
       "name": "Isaac TeSlaa",
@@ -2831,8 +2817,22 @@
       "adp": 177
     },
     {
+      "rank": 199,
+      "positional_rank": 49,
+      "player_id": 12582,
+      "sleeper_id": "8132",
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "ARI",
+      "age": 26.3,
+      "bye_week": 14,
+      "is_rookie": false,
+      "points": 72.7,
+      "adp": 108
+    },
+    {
       "rank": 200,
-      "positional_rank": 87,
+      "positional_rank": 85,
       "player_id": 35017,
       "sleeper_id": "11637",
       "name": "Keon Coleman",
@@ -2846,7 +2846,7 @@
     },
     {
       "rank": 201,
-      "positional_rank": 88,
+      "positional_rank": 86,
       "player_id": 7761,
       "sleeper_id": "4039",
       "name": "Cooper Kupp",
@@ -2860,7 +2860,7 @@
     },
     {
       "rank": 202,
-      "positional_rank": 89,
+      "positional_rank": 87,
       "player_id": 35563,
       "sleeper_id": "12540",
       "name": "Chimere Dike",
@@ -2874,17 +2874,17 @@
     },
     {
       "rank": 203,
-      "positional_rank": 90,
-      "player_id": 10331,
-      "sleeper_id": "6149",
-      "name": "Darius Slayton",
+      "positional_rank": 88,
+      "player_id": 35357,
+      "sleeper_id": "12536",
+      "name": "Jaylin Noel",
       "position": "WR",
-      "team": "NYG",
-      "age": 29.5,
+      "team": "HOU",
+      "age": 23.9,
       "bye_week": 8,
       "is_rookie": false,
-      "points": 70.1,
-      "adp": 2215
+      "points": 69.2,
+      "adp": 193
     },
     {
       "rank": 204,
@@ -2916,21 +2916,21 @@
     },
     {
       "rank": 206,
-      "positional_rank": 48,
-      "player_id": 12582,
-      "sleeper_id": "8132",
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "ARI",
-      "age": 26.3,
-      "bye_week": 14,
+      "positional_rank": 89,
+      "player_id": 13766,
+      "sleeper_id": "9501",
+      "name": "Demario Douglas",
+      "position": "WR",
+      "team": "NE",
+      "age": 25.6,
+      "bye_week": 11,
       "is_rookie": false,
-      "points": 65.4,
-      "adp": 108
+      "points": 65.9,
+      "adp": 289
     },
     {
       "rank": 207,
-      "positional_rank": 91,
+      "positional_rank": 90,
       "player_id": 9966,
       "sleeper_id": "4981",
       "name": "Calvin Ridley",
@@ -2958,7 +2958,7 @@
     },
     {
       "rank": 209,
-      "positional_rank": 92,
+      "positional_rank": 91,
       "player_id": 35993,
       "sleeper_id": "13320",
       "name": "Zachariah Branch",
@@ -2972,7 +2972,7 @@
     },
     {
       "rank": 210,
-      "positional_rank": 49,
+      "positional_rank": 50,
       "player_id": 12581,
       "sleeper_id": "8154",
       "name": "Brian Robinson Jr.",
@@ -2986,6 +2986,20 @@
     },
     {
       "rank": 211,
+      "positional_rank": 92,
+      "player_id": 10331,
+      "sleeper_id": "6149",
+      "name": "Darius Slayton",
+      "position": "WR",
+      "team": "NYG",
+      "age": 29.5,
+      "bye_week": 8,
+      "is_rookie": false,
+      "points": 63.3,
+      "adp": 2215
+    },
+    {
+      "rank": 212,
       "positional_rank": 93,
       "player_id": 35352,
       "sleeper_id": "12483",
@@ -2999,8 +3013,8 @@
       "adp": 215
     },
     {
-      "rank": 212,
-      "positional_rank": 50,
+      "rank": 213,
+      "positional_rank": 51,
       "player_id": 7756,
       "sleeper_id": "4147",
       "name": "Samaje Perine",
@@ -3013,7 +3027,7 @@
       "adp": 3455
     },
     {
-      "rank": 213,
+      "rank": 214,
       "positional_rank": 36,
       "player_id": 10485,
       "sleeper_id": "6826",
@@ -3027,7 +3041,7 @@
       "adp": 268
     },
     {
-      "rank": 214,
+      "rank": 215,
       "positional_rank": 37,
       "player_id": 10281,
       "sleeper_id": "5906",
@@ -3041,7 +3055,7 @@
       "adp": 2373
     },
     {
-      "rank": 215,
+      "rank": 216,
       "positional_rank": 38,
       "player_id": 10622,
       "sleeper_id": "6865",
@@ -3055,8 +3069,8 @@
       "adp": 222
     },
     {
-      "rank": 216,
-      "positional_rank": 51,
+      "rank": 217,
+      "positional_rank": 52,
       "player_id": 13564,
       "sleeper_id": "9753",
       "name": "Zach Charbonnet",
@@ -3067,27 +3081,13 @@
       "is_rookie": false,
       "points": 61.7,
       "adp": 101
-    },
-    {
-      "rank": 217,
-      "positional_rank": 39,
-      "player_id": 35010,
-      "sleeper_id": "11597",
-      "name": "Theo Johnson",
-      "position": "TE",
-      "team": "NYG",
-      "age": 25.4,
-      "bye_week": 8,
-      "is_rookie": false,
-      "points": 61.5,
-      "adp": 163
     }
   ],
   "sleeper": {
     "source": "https://api.sleeper.app/v1/players/nfl",
-    "fetched_at": "2026-08-04T16:43:16+00:00",
-    "dump_player_count": 12207,
-    "dump_offensive_count": 4151,
+    "fetched_at": "2026-08-29T14:28:59+00:00",
+    "dump_player_count": 12225,
+    "dump_offensive_count": 4158,
     "matched": 417,
     "unmatched": 0,
     "matched_by": {
@@ -3100,6 +3100,6 @@
   "points_source": {
     "file": "sleeper_projections.json",
     "season": "2026",
-    "fetched_at": "2026-08-20T23:42:25+00:00"
+    "fetched_at": "2026-08-29T14:29:03+00:00"
   }
 }

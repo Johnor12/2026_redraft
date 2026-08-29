@@ -11,7 +11,8 @@ win wherever both exist.
 
 The paste may be the whole draft room (Ctrl+A, Ctrl+C) or just its pick-history table.
 In a full-page paste the table is bounded by ``Pick History`` / ``All Rounds`` and
-``Activity``. Each round starts with a ``Round N`` line, and each pick contributes, in
+the activity feed — its ``Activity`` header, or its ``Picks`` tab in rooms (mock
+drafts, at least) that omit the header. Each round starts with a ``Round N`` line, and each pick contributes, in
 order: its overall pick number (the displayed Pick column counts across rounds; the
 ``Round N`` header and league size only cross-check it), the player's name, an
 injury designation (``Q``, ``O``, ...) if the player carries one, NFL team, and
@@ -73,11 +74,16 @@ def history_lines(text: str) -> list[str]:
     tab = lines.index("Pick History")
     try:
         start = lines.index("All Rounds", tab + 1) + 1
-        end = lines.index("Activity", start)
     except ValueError as exc:
+        raise ValueError("full-page paste has no 'All Rounds' line after 'Pick History'") from exc
+    # The table ends at the activity feed — its "Activity" header, or straight at the
+    # feed's "Picks" tab in rooms (mock drafts, at least) that omit the header.
+    ends = [lines.index(marker, start) for marker in ("Activity", "Picks") if marker in lines[start:]]
+    if not ends:
         raise ValueError(
-            "full-page paste does not contain the expected 'All Rounds' ... 'Activity' section"
-        ) from exc
+            "full-page paste has no 'Activity' or 'Picks' line ending the pick table"
+        )
+    end = min(ends)
     if start == end or not ROUND_RE.match(lines[start]):
         raise ValueError("expected a 'Round N' line immediately after 'All Rounds'")
     return lines[start:end]
@@ -320,6 +326,13 @@ RB
 """
     assert parse(full_page, teams=4) == expected
 
+    # Mock-draft rooms end the table at the feed's "Picks" tab, with no "Activity".
+    mock_page = full_page.replace(
+        "Activity\nAll\nMessages\nPicks",
+        "Picks\n\nJahmyr Gibbs / DET RB\nR1, P1 - John's Supreme Team3",
+    )
+    assert parse(mock_page, teams=4) == expected
+
     dump = {
         "1": {
             "player_id": "1", "first_name": "Jahmyr", "last_name": "Gibbs",
@@ -341,7 +354,7 @@ RB
         "Round 1\n1\nJahmyr Gibbs",
         SAMPLE.replace("Round 1", ""),
         SAMPLE.replace("Round 2", "Round 3"),  # pick 5 can't be in round 3
-        full_page.replace("Activity", "Chat"),
+        full_page.replace("Activity", "Chat").replace("Picks", "Sticks"),
     ):
         try:
             parse(bad, teams=4)

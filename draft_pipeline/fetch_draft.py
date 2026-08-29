@@ -43,10 +43,16 @@ from pathlib import Path
 import draft_history
 import paths
 import report as draft_report
-from draft_board import Board, build_document, index_users, pick_number_problems, pick_rows
+from draft_board import (
+    Board,
+    build_document,
+    index_users,
+    pick_number_problems,
+    pick_rows,
+)
 from selftest import selftest as run_selftest
 
-LEAGUE_ID = "1900421374"
+LEAGUE_ID = "96498436"
 SEASON = 2026
 
 # My ESPN account. SWID doubles as my member id; both cookies come from a logged-in
@@ -69,10 +75,38 @@ IR_SLOT = "21"
 
 #: ESPN proTeamId -> the abbreviation Sleeper uses as its DEF player id.
 ESPN_TEAM_ABBREV = {
-    1: "ATL", 2: "BUF", 3: "CHI", 4: "CIN", 5: "CLE", 6: "DAL", 7: "DEN", 8: "DET",
-    9: "GB", 10: "TEN", 11: "IND", 12: "KC", 13: "LV", 14: "LAR", 15: "MIA", 16: "MIN",
-    17: "NE", 18: "NO", 19: "NYG", 20: "NYJ", 21: "PHI", 22: "ARI", 23: "PIT", 24: "LAC",
-    25: "SF", 26: "SEA", 27: "TB", 28: "WAS", 29: "CAR", 30: "JAX", 33: "BAL", 34: "HOU",
+    1: "ATL",
+    2: "BUF",
+    3: "CHI",
+    4: "CIN",
+    5: "CLE",
+    6: "DAL",
+    7: "DEN",
+    8: "DET",
+    9: "GB",
+    10: "TEN",
+    11: "IND",
+    12: "KC",
+    13: "LV",
+    14: "LAR",
+    15: "MIA",
+    16: "MIN",
+    17: "NE",
+    18: "NO",
+    19: "NYG",
+    20: "NYJ",
+    21: "PHI",
+    22: "ARI",
+    23: "PIT",
+    24: "LAC",
+    25: "SF",
+    26: "SEA",
+    27: "TB",
+    28: "WAS",
+    29: "CAR",
+    30: "JAX",
+    33: "BAL",
+    34: "HOU",
 }
 
 
@@ -94,7 +128,9 @@ def fetch(league_id: str, season: int, timeout: int = TIMEOUT_SECONDS) -> dict:
     with urllib.request.urlopen(request, timeout=timeout) as response:
         league = json.loads(response.read())
     if not isinstance(league, dict) or str(league.get("id")) != str(league_id):
-        raise ValueError(f"response is not league {league_id} — got {str(league)[:200]}")
+        raise ValueError(
+            f"response is not league {league_id} — got {str(league)[:200]}"
+        )
     return league
 
 
@@ -115,7 +151,9 @@ def sleeper_index(players_path: Path) -> tuple[dict, dict[str, dict]]:
     return by_espn, players
 
 
-def sleeper_player_for(espn_player_id: int, by_espn: dict, players: dict) -> dict | None:
+def sleeper_player_for(
+    espn_player_id: int, by_espn: dict, players: dict
+) -> dict | None:
     if str(espn_player_id) in by_espn:
         return by_espn[str(espn_player_id)]
     if espn_player_id <= -16001:  # D/ST: -16000 - proTeamId
@@ -194,7 +232,9 @@ def adapt(league: dict, by_espn: dict, players: dict) -> dict:
                 "is_keeper": bool(pick.get("keeper")),
                 "metadata": {
                     "first_name": player.get("first_name") if player else "espn",
-                    "last_name": player.get("last_name") if player else str(espn_player_id),
+                    "last_name": player.get("last_name")
+                    if player
+                    else str(espn_player_id),
                     "position": player.get("position") if player else None,
                     "team": player.get("team") if player else None,
                 },
@@ -206,9 +246,7 @@ def adapt(league: dict, by_espn: dict, players: dict) -> dict:
         located = f"{team.get('location') or ''} {team.get('nickname') or ''}".strip()
         return name or located or None
 
-    owner_team = {
-        owner: team for team in teams for owner in (team.get("owners") or [])
-    }
+    owner_team = {owner: team for team in teams for owner in (team.get("owners") or [])}
     users = [
         {
             "user_id": member["id"],
@@ -227,10 +265,18 @@ def adapt(league: dict, by_espn: dict, players: dict) -> dict:
             f"{len(unmatched)} pick(s) have no Sleeper match for ESPN id(s) "
             f"{unmatched[:5]} — they keep sleeper_id null and join nothing in the pool"
         )
-    return {"draft": draft, "picks": picks, "traded": [], "users": users, "warning": warning}
+    return {
+        "draft": draft,
+        "picks": picks,
+        "traded": [],
+        "users": users,
+        "warning": warning,
+    }
 
 
-def overlay_history(text: str, fetched: dict, league: dict, board: Board, players: dict) -> str:
+def overlay_history(
+    text: str, fetched: dict, league: dict, board: Board, players: dict
+) -> str:
     """Merge hand-pasted history picks into ``fetched['picks']``; ESPN picks win.
 
     ESPN's read API lags the live draft, so the draft room's pick history is pasted
@@ -280,7 +326,9 @@ def main(argv: list[str] | None = None) -> int:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     ap.add_argument("-o", "--output", default=paths.DRAFT, type=Path)
-    ap.add_argument("--report", action="store_true", help="print a validation summary to stderr")
+    ap.add_argument(
+        "--report", action="store_true", help="print a validation summary to stderr"
+    )
     ap.add_argument(
         "--selftest",
         action="store_true",
@@ -297,6 +345,8 @@ def main(argv: list[str] | None = None) -> int:
         league = fetch(LEAGUE_ID, SEASON)
     except urllib.error.HTTPError as exc:
         hint = " — cookies expired or wrong league?" if exc.code in (401, 403) else ""
+        if exc.code == 404:
+            hint = " — no such league; mock-lobby league ids expire, update LEAGUE_ID"
         print(f"error: ESPN answered {exc.code} {exc.reason}{hint}", file=sys.stderr)
         return 1
     except (urllib.error.URLError, TimeoutError) as exc:
@@ -309,14 +359,20 @@ def main(argv: list[str] | None = None) -> int:
     try:
         by_espn, players = sleeper_index(paths.SLEEPER_PLAYERS)
     except (OSError, json.JSONDecodeError) as exc:
-        print(f"error: cannot read {paths.display(paths.SLEEPER_PLAYERS)}: {exc}", file=sys.stderr)
+        print(
+            f"error: cannot read {paths.display(paths.SLEEPER_PLAYERS)}: {exc}",
+            file=sys.stderr,
+        )
         return 1
 
     try:
         fetched = adapt(league, by_espn, players)
         board = Board(fetched["draft"], fetched["traded"])
     except (KeyError, TypeError, ValueError) as exc:
-        print(f"error: league {LEAGUE_ID} is not shaped as expected: {exc!r}", file=sys.stderr)
+        print(
+            f"error: league {LEAGUE_ID} is not shaped as expected: {exc!r}",
+            file=sys.stderr,
+        )
         return 1
     fatal = board.problems()
 
@@ -327,7 +383,10 @@ def main(argv: list[str] | None = None) -> int:
             try:
                 note = overlay_history(history_text, fetched, league, board, players)
             except ValueError as exc:
-                print(f"error: {paths.display(paths.DRAFT_HISTORY)}: {exc}", file=sys.stderr)
+                print(
+                    f"error: {paths.display(paths.DRAFT_HISTORY)}: {exc}",
+                    file=sys.stderr,
+                )
                 return 1
             print(note, file=sys.stderr)
 
@@ -355,7 +414,9 @@ def main(argv: list[str] | None = None) -> int:
             file=sys.stderr,
         )
     elif me["draft_slot"] is None:
-        print(f"warning: {me['username']} has no slot in the draft order", file=sys.stderr)
+        print(
+            f"warning: {me['username']} has no slot in the draft order", file=sys.stderr
+        )
 
     rows, checks = pick_rows(board, fetched["picks"], by_user, me["user_id"])
     if checks["mismatches"]:
