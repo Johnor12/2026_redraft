@@ -1,0 +1,1838 @@
+ESPN Fantasy Football Draft - Respect is Earned.
+RND 12 of 13
+01:28
+Round
+13
+Pick Queue
+Autopick
+Rank
+PLAYER
+No players in queue
+Roster
+
+Brandon Aubrey ❤️
+POS
+Player
+BYE
+QB
+J. Hurts
+10
+RB
+A. Jeanty
+13
+RB
+K. Williams
+11
+WR
+A. St. Brown
+6
+WR
+L. McConkey
+7
+TE
+T. Kelce
+5
+FLEX
+B. Irving
+10
+FLEX
+T. Henderson
+11
+D/ST
+Empty
+-
+BE
+B. Thomas Jr.
+(WR)
+7
+BE
+R. Harvey
+(RB)
+10
+BE
+D. Sampson
+(RB)
+11
+BE
+Empty
+-
+Roster Limits
+11/13 Players
+QB1/4RB6/8WR3/8TE1/3D/ST0/3
+Jaxson Dart
+You are on the clock!
+Your autopick would be: Jaxson Dart / New York Giants QB
+
+Draft
+Players
+Pick History
+Board
+Rules
+
+All Rounds
+Round 1
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+1
+
+Jahmyr Gibbs
+DET
+RB
+Nick's Nasty Team
+328.4
+331
+1
+2
+
+Bijan Robinson
+ATL
+RB
+Chudwick
+331.3
+314.9
+2
+3
+
+Jonathan Taylor
+IND
+RB
+The Movement ✊🏿
+339.3
+291.2
+5
+4
+
+Ja'Marr Chase
+Q
+CIN
+WR
+Shripp Frimpburger
+251.1
+277.7
+3
+5
+
+Puka Nacua
+Q
+LAR
+WR
+Fell For It Again
+310.5
+294.9
+4
+6
+
+Amon-Ra St. Brown
+DET
+WR
+Brandon Aubrey ❤️
+265.5
+264.9
+8
+7
+
+Christian McCaffrey
+Q
+SF
+RB
+Compound Fighting Pugs
+365.6
+303.3
+7
+8
+
+James Cook III
+BUF
+RB
+Perennial 3rd Placer
+285.7
+261.7
+9
+9
+
+Jaxon Smith-Njigba
+SEA
+WR
+Barnacle Goose (B. leucopsi)
+300.4
+268.4
+6
+10
+
+CeeDee Lamb
+DAL
+WR
+Liverpool
+163.4
+242
+11
+Round 2
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+11
+
+Chase Brown
+CIN
+RB
+Liverpool
+248.1
+239.9
+13
+12
+
+Saquon Barkley
+PHI
+RB
+Barnacle Goose (B. leucopsi)
+213.8
+252
+15
+13
+
+Derrick Henry
+BAL
+RB
+Perennial 3rd Placer
+272
+264.1
+16
+14
+
+Omarion Hampton
+LAC
+RB
+Compound Fighting Pugs
+119.7
+235.9
+14
+15
+
+Ashton Jeanty
+Q
+LV
+RB
+Brandon Aubrey ❤️
+217.6
+248.2
+18
+16
+
+Kenneth Walker III
+Q
+KC
+RB
+Fell For It Again
+176.4
+250
+25
+17
+
+Justin Jefferson
+MIN
+WR
+Shripp Frimpburger
+159.5
+238.3
+12
+18
+
+Drake London
+ATL
+WR
+The Movement ✊🏿
+167.9
+218.7
+17
+19
+
+De'Von Achane
+MIA
+RB
+Chudwick
+289.3
+261
+10
+20
+
+Malik Nabers
+Q
+NYG
+WR
+Nick's Nasty Team
+48.1
+202.7
+33
+Round 3
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+21
+
+Josh Allen
+BUF
+QB
+Nick's Nasty Team
+364.6
+369.7
+26
+22
+
+A.J. Brown
+NE
+WR
+Chudwick
+181.3
+206
+19
+23
+
+Josh Jacobs
+Q
+GB
+RB
+The Movement ✊🏿
+219.1
+241.1
+31
+24
+
+George Pickens
+DAL
+WR
+Shripp Frimpburger
+245.4
+198.8
+28
+25
+
+Brock Bowers
+LV
+TE
+Fell For It Again
+144.2
+191.5
+22
+26
+
+Kyren Williams
+LAR
+RB
+Brandon Aubrey ❤️
+245.3
+215.3
+34
+27
+
+Jeremiyah Love
+Q
+ARI
+RB
+Compound Fighting Pugs
+-
+245.9
+21
+28
+
+Javonte Williams
+DAL
+RB
+Perennial 3rd Placer
+225.3
+241.3
+32
+29
+
+Nico Collins
+HOU
+WR
+Barnacle Goose (B. leucopsi)
+190.7
+205
+23
+30
+
+Chris Olave
+NO
+WR
+Liverpool
+218
+204.8
+24
+Round 4
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+31
+
+Breece Hall
+Q
+NYJ
+RB
+Liverpool
+189.7
+247.9
+30
+32
+
+Trey McBride
+ARI
+TE
+Barnacle Goose (B. leucopsi)
+252.9
+188
+20
+33
+
+Davante Adams
+LAR
+WR
+Perennial 3rd Placer
+192.9
+198.6
+44
+34
+
+Garrett Wilson
+NYJ
+WR
+Compound Fighting Pugs
+81.5
+199.4
+29
+35
+
+Ladd McConkey
+LAC
+WR
+Brandon Aubrey ❤️
+147.9
+180.8
+40
+36
+
+Zay Flowers
+Q
+BAL
+WR
+Fell For It Again
+200.3
+197.9
+37
+37
+
+Colston Loveland
+CHI
+TE
+Shripp Frimpburger
+136.1
+165.8
+42
+38
+
+Jaylen Waddle
+DEN
+WR
+The Movement ✊🏿
+162.1
+175
+45
+39
+
+DeVonta Smith
+PHI
+WR
+Chudwick
+163.3
+194
+36
+40
+
+Emeka Egbuka
+Q
+TB
+WR
+Nick's Nasty Team
+164.2
+194.2
+38
+Round 5
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+41
+
+Cam Skattebo
+NYG
+RB
+Nick's Nasty Team
+115.7
+204.7
+46
+42
+
+Travis Etienne Jr.
+NO
+RB
+Chudwick
+235.9
+223.7
+39
+43
+
+Tetairoa McMillan
+CAR
+WR
+The Movement ✊🏿
+176.4
+194.7
+35
+44
+
+D'Andre Swift
+CHI
+RB
+Shripp Frimpburger
+211.6
+196.5
+47
+45
+
+Rashee Rice
+KC
+WR
+Fell For It Again
+123.6
+214.2
+27
+46
+
+Bucky Irving
+TB
+RB
+Brandon Aubrey ❤️
+123.5
+188.7
+50
+47
+
+Tee Higgins
+CIN
+WR
+Compound Fighting Pugs
+182.1
+182.7
+43
+48
+
+DJ Moore
+BUF
+WR
+Perennial 3rd Placer
+145.2
+175.9
+56
+49
+
+Jameson Williams
+DET
+WR
+Barnacle Goose (B. leucopsi)
+187.4
+176.3
+52
+50
+
+Quinshon Judkins
+CLE
+RB
+Liverpool
+156.8
+211.4
+41
+Round 6
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+51
+
+Terry McLaurin
+WSH
+WR
+Liverpool
+95.2
+180.2
+51
+52
+
+David Montgomery
+HOU
+RB
+Barnacle Goose (B. leucopsi)
+154.9
+176.8
+53
+53
+
+Lamar Jackson
+BAL
+QB
+Perennial 3rd Placer
+214.9
+322.9
+48
+54
+
+Tyler Warren
+Q
+IND
+TE
+Compound Fighting Pugs
+150.5
+168.4
+55
+55
+
+TreVeyon Henderson
+Q
+NE
+RB
+Brandon Aubrey ❤️
+188.7
+177.9
+63
+56
+
+Luther Burden III
+Q
+CHI
+WR
+Fell For It Again
+104.4
+168.3
+60
+57
+
+Jadarian Price
+SEA
+RB
+Shripp Frimpburger
+-
+180.5
+59
+58
+
+Drake Maye
+NE
+QB
+The Movement ✊🏿
+351.5
+319.4
+58
+59
+
+Parker Washington
+JAX
+WR
+Chudwick
+143.7
+152.4
+76
+60
+
+Mike Evans
+Q
+SF
+WR
+Nick's Nasty Team
+69.8
+152.5
+65
+Round 7
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+61
+
+Christian Watson
+GB
+WR
+Nick's Nasty Team
+114.9
+157.7
+75
+62
+
+Stefon Diggs
+WSH
+WR
+Chudwick
+167.8
+128.5
+84
+63
+
+Bhayshul Tuten
+JAX
+RB
+The Movement ✊🏿
+83.6
+188.1
+49
+64
+
+Rome Odunze
+CHI
+WR
+Shripp Frimpburger
+124.1
+183
+54
+65
+
+Rhamondre Stevenson
+NE
+RB
+Fell For It Again
+162.8
+181.6
+67
+66
+
+Jalen Hurts
+PHI
+QB
+Brandon Aubrey ❤️
+299.1
+320.3
+69
+67
+
+Joe Burrow
+CIN
+QB
+Compound Fighting Pugs
+134.5
+304.8
+64
+68
+
+Kyle Pitts Sr.
+ATL
+TE
+Perennial 3rd Placer
+166.8
+144.9
+72
+69
+
+Carnell Tate
+TEN
+WR
+Barnacle Goose (B. leucopsi)
+-
+165.1
+61
+70
+
+Tucker Kraft
+Q
+GB
+TE
+Liverpool
+101.2
+145
+104
+Round 8
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+71
+
+Jaylen Warren
+PIT
+RB
+Liverpool
+197.1
+168.5
+77
+72
+
+Trevor Lawrence
+JAX
+QB
+Barnacle Goose (B. leucopsi)
+338.2
+288.3
+89
+73
+
+Jonathon Brooks
+CAR
+RB
+Perennial 3rd Placer
+0
+154.4
+87
+74
+
+Michael Wilson
+ARI
+WR
+Compound Fighting Pugs
+181.6
+141.2
+80
+75
+
+Brian Thomas Jr.
+Q
+JAX
+WR
+Brandon Aubrey ❤️
+114.8
+148.1
+94
+76
+
+Jayden Daniels
+WSH
+QB
+Fell For It Again
+114.3
+318.4
+57
+77
+
+Marvin Harrison Jr.
+ARI
+WR
+Shripp Frimpburger
+107.3
+159.4
+62
+78
+
+Harold Fannin Jr.
+CLE
+TE
+The Movement ✊🏿
+150.4
+147.3
+70
+79
+
+George Kittle
+Q
+SF
+TE
+Chudwick
+133
+151.7
+81
+80
+
+Sam LaPorta
+Q
+DET
+TE
+Nick's Nasty Team
+86.9
+149.4
+78
+Round 9
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+81
+
+Michael Pittman Jr.
+Q
+PIT
+WR
+Nick's Nasty Team
+162.4
+153.1
+66
+82
+
+Kenny Gainwell
+TB
+RB
+Chudwick
+184.8
+151.8
+79
+83
+
+Texans D/ST
+HOU
+D/ST
+The Movement ✊🏿
+187
+146.8
+140
+84
+
+Justin Herbert
+LAC
+QB
+Shripp Frimpburger
+286.9
+283.6
+86
+85
+
+Rico Dowdle
+PIT
+RB
+Fell For It Again
+196.8
+171.5
+82
+86
+
+RJ Harvey
+DEN
+RB
+Brandon Aubrey ❤️
+183.1
+125
+103
+87
+
+Tony Pollard
+TEN
+RB
+Compound Fighting Pugs
+169.3
+171
+74
+88
+
+Chris Godwin Jr.
+TB
+WR
+Perennial 3rd Placer
+66.5
+127.2
+97
+89
+
+DK Metcalf
+Q
+PIT
+WR
+Barnacle Goose (B. leucopsi)
+157.7
+163.6
+68
+90
+
+Caleb Williams
+CHI
+QB
+Liverpool
+317.2
+281.7
+99
+Round 10
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+91
+
+Quentin Johnston
+LAC
+WR
+Liverpool
+145.7
+139
+106
+92
+
+Jacory Croskey-Merritt
+Q
+WSH
+RB
+Barnacle Goose (B. leucopsi)
+135.8
+151.5
+117
+93
+
+Jordan Addison
+MIN
+WR
+Perennial 3rd Placer
+114.1
+140.3
+98
+94
+
+Courtland Sutton
+DEN
+WR
+Compound Fighting Pugs
+182.7
+169.8
+71
+95
+
+Travis Kelce
+KC
+TE
+Brandon Aubrey ❤️
+155.2
+140.9
+107
+96
+
+J.K. Dobbins
+DEN
+RB
+Fell For It Again
+110.4
+164.3
+101
+97
+
+Jordan Mason
+MIN
+RB
+Shripp Frimpburger
+121.9
+143.8
+129
+98
+
+Dak Prescott
+DAL
+QB
+The Movement ✊🏿
+313.8
+286.9
+73
+99
+
+Bo Nix
+DEN
+QB
+Chudwick
+304.8
+296.2
+113
+100
+
+Romeo Doubs
+NE
+WR
+Nick's Nasty Team
+137.9
+124.2
+124
+Round 11
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+101
+
+Isiah Pacheco
+Q
+DET
+RB
+Nick's Nasty Team
+77.8
+114.9
+134
+102
+
+De'Zhaun Stribling
+Q
+SF
+WR
+Chudwick
+-
+125.4
+122
+103
+
+Alec Pierce
+Q
+IND
+WR
+The Movement ✊🏿
+159.8
+156.4
+93
+104
+
+Josh Downs
+Q
+IND
+WR
+Shripp Frimpburger
+107.4
+122
+105
+105
+
+Matthew Golden
+GB
+WR
+Fell For It Again
+55.5
+150.8
+96
+106
+
+Dylan Sampson
+CLE
+RB
+Brandon Aubrey ❤️
+71.1
+72.8
+144
+107
+
+Makai Lemon
+PHI
+WR
+Compound Fighting Pugs
+-
+128.1
+111
+108
+
+Jalen Coker
+CAR
+WR
+Perennial 3rd Placer
+73.9
+116.5
+125
+109
+
+Rachaad White
+Q
+WSH
+RB
+Barnacle Goose (B. leucopsi)
+123
+144.6
+92
+110
+
+Chuba Hubbard
+Q
+CAR
+RB
+Liverpool
+110.4
+152.1
+83
+Round 12
+Pick
+Player
+Team
+2025 PTS
+PROJ PTS
+RK
+111
+
+Blake Corum
+LAR
+RB
+Liverpool
+118.2
+150.9
+109
+112
+
+Jaguars D/ST
+JAX
+D/ST
+Barnacle Goose (B. leucopsi)
+150
+91.8
+240
+113
+
+MarShawn Lloyd
+GB
+RB
+Perennial 3rd Placer
+0
+78.3
+153
+114
+
+Isaiah Likely
+NYG
+TE
+Compound Fighting Pugs
+48.2
+123.9
+118
+Activity
+All
+Messages
+Picks
+John McGue
+joined the draft
+Nick Husa
+joined the draft
+Nick Husa
+left the draft
+Nick Husa
+joined the draft
+Andrew Chadwick
+joined the draft
+Andrew Chadwick
+left the draft
+Andrew Chadwick
+joined the draft
+Bastien Bacro-Duverger
+joined the draft
+Nick Husa
+left the draft
+Bastien Bacro-Duverger
+left the draft
+Bastien Bacro-Duverger
+joined the draft
+Nick Husa
+joined the draft
+Maxwell Hudson
+joined the draft
+Nick Husa
+left the draft
+Maxwell Hudson
+left the draft
+Nick Husa
+joined the draft
+Erik Ferraro
+joined the draft
+Maxwell Hudson
+joined the draft
+Andrew Chadwick
+left the draft
+Andrew Chadwick
+joined the draft
+Wilson Antley
+joined the draft
+
+Jahmyr Gibbs / DET RB
+R1, P1 - Nick's Nasty Team
+Owen Antley
+joined the draft
+
+Bijan Robinson / ATL RB
+R1, P2 - Chudwick
+
+Jonathan Taylor / IND RB
+R1, P3 - The Movement ✊🏿
+Owen Antley
+left the draft
+Owen Antley
+joined the draft
+
+Ja'Marr Chase / CIN WR
+R1, P4 - Shripp Frimpburger
+
+Puka Nacua / LAR WR
+R1, P5 - Fell For It Again
+
+Amon-Ra St. Brown / DET WR
+R1, P6 - Brandon Aubrey ❤️
+
+Christian McCaffrey / SF RB
+R1, P7 - Compound Fighting Pugs
+
+James Cook III / BUF RB
+R1, P8 - Perennial 3rd Placer
+
+Jaxon Smith-Njigba / SEA WR
+R1, P9 - Barnacle Goose (B. leucopsi)
+
+CeeDee Lamb / DAL WR
+R1, P10 - Liverpool
+
+Chase Brown / CIN RB
+R2, P1 - Liverpool
+
+Saquon Barkley / PHI RB
+R2, P2 - Barnacle Goose (B. leucopsi)
+
+Derrick Henry / BAL RB
+R2, P3 - Perennial 3rd Placer
+Maxwell Hudson
+left the draft
+
+Omarion Hampton / LAC RB
+R2, P4 - Compound Fighting Pugs
+Maxwell Hudson
+joined the draft
+
+Ashton Jeanty / LV RB
+R2, P5 - Brandon Aubrey ❤️
+
+Kenneth Walker III / KC RB
+R2, P6 - Fell For It Again
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Justin Jefferson / MIN WR
+R2, P7 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Owen Antley
+left the draft
+Owen Antley
+joined the draft
+
+Drake London / ATL WR
+R2, P8 - The Movement ✊🏿
+
+De'Von Achane / MIA RB
+R2, P9 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Malik Nabers / NYG WR
+R2, P10 - Nick's Nasty Team
+
+Josh Allen / BUF QB
+R3, P1 - Nick's Nasty Team
+
+A.J. Brown / NE WR
+R3, P2 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Josh Jacobs / GB RB
+R3, P3 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+
+George Pickens / DAL WR
+R3, P4 - Shripp Frimpburger
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+
+Brock Bowers / LV TE
+R3, P5 - Fell For It Again
+Maxwell Hudson
+joined the draft
+
+Kyren Williams / LAR RB
+R3, P6 - Brandon Aubrey ❤️
+
+Jeremiyah Love / ARI RB
+R3, P7 - Compound Fighting Pugs
+Maxwell Hudson
+left the draft
+
+Javonte Williams / DAL RB
+R3, P8 - Perennial 3rd Placer
+Maxwell Hudson
+joined the draft
+Andrew Chadwick
+left the draft
+
+Nico Collins / HOU WR
+R3, P9 - Barnacle Goose (B. leucopsi)
+Andrew Chadwick
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Chris Olave / NO WR
+R3, P10 - Liverpool
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Breece Hall / NYJ RB
+R4, P1 - Liverpool
+
+Trey McBride / ARI TE
+R4, P2 - Barnacle Goose (B. leucopsi)
+
+Davante Adams / LAR WR
+R4, P3 - Perennial 3rd Placer
+
+Garrett Wilson / NYJ WR
+R4, P4 - Compound Fighting Pugs
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Ladd McConkey / LAC WR
+R4, P5 - Brandon Aubrey ❤️
+
+Zay Flowers / BAL WR
+R4, P6 - Fell For It Again
+
+Colston Loveland / CHI TE
+R4, P7 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Jaylen Waddle / DEN WR
+R4, P8 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+DeVonta Smith / PHI WR
+R4, P9 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Emeka Egbuka / TB WR
+R4, P10 - Nick's Nasty Team
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Cam Skattebo / NYG RB
+R5, P1 - Nick's Nasty Team
+
+Travis Etienne Jr. / NO RB
+R5, P2 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Tetairoa McMillan / CAR WR
+R5, P3 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+D'Andre Swift / CHI RB
+R5, P4 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Rashee Rice / KC WR
+R5, P5 - Fell For It Again
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Bucky Irving / TB RB
+R5, P6 - Brandon Aubrey ❤️
+
+Tee Higgins / CIN WR
+R5, P7 - Compound Fighting Pugs
+
+DJ Moore / BUF WR
+R5, P8 - Perennial 3rd Placer
+
+Jameson Williams / DET WR
+R5, P9 - Barnacle Goose (B. leucopsi)
+
+Quinshon Judkins / CLE RB
+R5, P10 - Liverpool
+
+Terry McLaurin / WSH WR
+R6, P1 - Liverpool
+
+David Montgomery / HOU RB
+R6, P2 - Barnacle Goose (B. leucopsi)
+
+Lamar Jackson / BAL QB
+R6, P3 - Perennial 3rd Placer
+
+Tyler Warren / IND TE
+R6, P4 - Compound Fighting Pugs
+Erik Ferraro
+left the draft
+Erik Ferraro
+joined the draft
+Erik Ferraro
+left the draft
+
+TreVeyon Henderson / NE RB
+R6, P5 - Brandon Aubrey ❤️
+Erik Ferraro
+joined the draft
+
+Luther Burden III / CHI WR
+R6, P6 - Fell For It Again
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Jadarian Price / SEA RB
+R6, P7 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Drake Maye / NE QB
+R6, P8 - The Movement ✊🏿
+
+Parker Washington / JAX WR
+R6, P9 - Chudwick
+
+Mike Evans / SF WR
+R6, P10 - Nick's Nasty Team
+Andrew Chadwick
+left the draft
+
+Christian Watson / GB WR
+R7, P1 - Nick's Nasty Team
+Andrew Chadwick
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Stefon Diggs / WSH WR
+R7, P2 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Bhayshul Tuten / JAX RB
+R7, P3 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+
+Rome Odunze / CHI WR
+R7, P4 - Shripp Frimpburger
+
+Rhamondre Stevenson / NE RB
+R7, P5 - Fell For It Again
+
+Jalen Hurts / PHI QB
+R7, P6 - Brandon Aubrey ❤️
+
+Joe Burrow / CIN QB
+R7, P7 - Compound Fighting Pugs
+
+Kyle Pitts Sr. / ATL TE
+R7, P8 - Perennial 3rd Placer
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Carnell Tate / TEN WR
+R7, P9 - Barnacle Goose (B. leucopsi)
+
+Tucker Kraft / GB TE
+R7, P10 - Liverpool
+Wilson Antley
+left the draft
+Wilson Antley
+joined the draft
+
+Jaylen Warren / PIT RB
+R8, P1 - Liverpool
+
+Trevor Lawrence / JAX QB
+R8, P2 - Barnacle Goose (B. leucopsi)
+
+Jonathon Brooks / CAR RB
+R8, P3 - Perennial 3rd Placer
+
+Michael Wilson / ARI WR
+R8, P4 - Compound Fighting Pugs
+
+Brian Thomas Jr. / JAX WR
+R8, P5 - Brandon Aubrey ❤️
+Erik Ferraro
+left the draft
+Erik Ferraro
+joined the draft
+
+Jayden Daniels / WSH QB
+R8, P6 - Fell For It Again
+
+Marvin Harrison Jr. / ARI WR
+R8, P7 - Shripp Frimpburger
+
+Harold Fannin Jr. / CLE TE
+R8, P8 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+
+George Kittle / SF TE
+R8, P9 - Chudwick
+Maxwell Hudson
+joined the draft
+
+Sam LaPorta / DET TE
+R8, P10 - Nick's Nasty Team
+
+Michael Pittman Jr. / PIT WR
+R9, P1 - Nick's Nasty Team
+
+Kenny Gainwell / TB RB
+R9, P2 - Chudwick
+
+Texans D/ST / HOU D/ST
+R9, P3 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Owen Antley
+left the draft
+
+Justin Herbert / LAC QB
+R9, P4 - Shripp Frimpburger
+
+Rico Dowdle / PIT RB
+R9, P5 - Fell For It Again
+Maxwell Hudson
+left the draft
+Owen Antley
+joined the draft
+Maxwell Hudson
+joined the draft
+
+RJ Harvey / DEN RB
+R9, P6 - Brandon Aubrey ❤️
+Nick Husa
+left the draft
+Nick Husa
+joined the draft
+
+Tony Pollard / TEN RB
+R9, P7 - Compound Fighting Pugs
+
+Chris Godwin Jr. / TB WR
+R9, P8 - Perennial 3rd Placer
+
+DK Metcalf / PIT WR
+R9, P9 - Barnacle Goose (B. leucopsi)
+
+Caleb Williams / CHI QB
+R9, P10 - Liverpool
+
+Quentin Johnston / LAC WR
+R10, P1 - Liverpool
+Maxwell Hudson
+left the draft
+
+Jacory Croskey-Merritt / WSH RB
+R10, P2 - Barnacle Goose (B. leucopsi)
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Jordan Addison / MIN WR
+R10, P3 - Perennial 3rd Placer
+
+Courtland Sutton / DEN WR
+R10, P4 - Compound Fighting Pugs
+
+Travis Kelce / KC TE
+R10, P5 - Brandon Aubrey ❤️
+
+J.K. Dobbins / DEN RB
+R10, P6 - Fell For It Again
+
+Jordan Mason / MIN RB
+R10, P7 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Dak Prescott / DAL QB
+R10, P8 - The Movement ✊🏿
+Maxwell Hudson
+left the draft
+
+Bo Nix / DEN QB
+R10, P9 - Chudwick
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Romeo Doubs / NE WR
+R10, P10 - Nick's Nasty Team
+
+Isiah Pacheco / DET RB
+R11, P1 - Nick's Nasty Team
+
+De'Zhaun Stribling / SF WR
+R11, P2 - Chudwick
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+Erik Ferraro
+left the draft
+
+Alec Pierce / IND WR
+R11, P3 - The Movement ✊🏿
+Erik Ferraro
+joined the draft
+Maxwell Hudson
+left the draft
+Maxwell Hudson
+joined the draft
+
+Josh Downs / IND WR
+R11, P4 - Shripp Frimpburger
+Maxwell Hudson
+left the draft
+
+Matthew Golden / GB WR
+R11, P5 - Fell For It Again
+
+Dylan Sampson / CLE RB
+R11, P6 - Brandon Aubrey ❤️
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+
+Makai Lemon / PHI WR
+R11, P7 - Compound Fighting Pugs
+Maxwell Hudson
+joined the draft
+Maxwell Hudson
+left the draft
+Owen Antley
+left the draft
+
+Jalen Coker / CAR WR
+R11, P8 - Perennial 3rd Placer
+Maxwell Hudson
+joined the draft
+
+Rachaad White / WSH RB
+R11, P9 - Barnacle Goose (B. leucopsi)
+Ned Harrell (Fell For It Again)
+gpgp
+Owen Antley
+joined the draft
+
+Chuba Hubbard / CAR RB
+R11, P10 - Liverpool
+Justin Moffitt (Barnacle Goose (B. leucopsi))
+one of em has to hit
+Owen Antley
+left the draft
+
+Blake Corum / LAR RB
+R12, P1 - Liverpool
+Ned Harrell (Fell For It Again)
+not even joking
+Justin Moffitt (Barnacle Goose (B. leucopsi))
+I know!
+Owen Antley
+joined the draft
+
+Jaguars D/ST / JAX D/ST
+R12, P2 - Barnacle Goose (B. leucopsi)
+
+MarShawn Lloyd / GB RB
+R12, P3 - Perennial 3rd Placer
+
+Isaiah Likely / NYG TE
+R12, P4 - Compound Fighting Pugs
+Send
+15
