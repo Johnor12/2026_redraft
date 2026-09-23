@@ -2,7 +2,8 @@
 
 A toolkit for a 10-team 0.5 PPR redraft league. Independent
 processes publish stable JSON artifacts at the repository root; the ranker consumes
-those artifacts and the static dashboard renders the result.
+those artifacts and the static dashboard renders the result. In season, `weekly.py`
+refreshes the league state and optimizes my lineup and waiver claims.
 
 ## League assumptions
 
@@ -16,6 +17,8 @@ those artifacts and the static dashboard renders the result.
   real draft order is published; `draft.json` overrides it with a complaint
 - The D/ST slot is drafted but not modeled: the pool and rankings are offense-only,
   so a made D/ST pick is carried as an off-pool roster spot
+- Traditional rolling waivers with no FAAB budget: pickups are ordered add/drop claims
+  processed by waiver priority, and a won claim sends that team to the back
 
 These are project assumptions, not runtime configuration. Ranker constants live in
 `ranker/league.py`.
@@ -41,6 +44,11 @@ draft_pipeline/ ──────────────> draft.json ───
                                                    │
 data_source_investigator/ ────> data_source_matches.json
                          └────> data/rankings.json ─┘
+
+In season:
+
+league_pipeline/ ──────────────> league.json ───────┐
+GridironAI weekly + rest-of-season CSVs ────────────┴─> weekly.py ──> lineup + claims
 ```
 
 The published files have distinct owners:
@@ -55,9 +63,12 @@ The published files have distinct owners:
   (ESPN's read API lags the draft room by minutes or more)
 - `data_source_matches.json`: the provider board closest to each opponent's picks
 - `rankings.json`: undrafted-player rankings, recommendations, simulations, and validation
+- `league.json`: the in-season ESPN state — my roster and lineup slots, every available
+  player, waiver order, and ESPN's own weekly and rest-of-season projections
 
 `sleeper_id` is the cross-process player key. `roster_id` and `draft_slot` connect
-opponent source matches to the live board.
+opponent source matches to the live board. In season, `weekly.py` keys players by ESPN
+id and joins GridironAI to them by name.
 
 ## Components
 
@@ -67,6 +78,10 @@ opponent source matches to the live board.
   boards and infer opponent strategies
 - [Ranker](ranker/README.md): wire-level solver, opponent simulation, planning,
   and output contracts
+- [League pipeline](league_pipeline/README.md): ESPN league API to the in-season
+  `league.json`
+- `weekly.py`: refreshes `league.json`, then prints this week's optimal lineup and the
+  ranked waiver claims
 - `index.html`: dependency-free dashboard for `rankings.json`
 - `data_source_investigator/index.html`: source-fit and pick-evidence dashboard
 - `serve.py`: serves both dashboards at http://127.0.0.1:8123
@@ -130,6 +145,35 @@ uv run evaluate_opponents.py
 
 Before and after changing an opponent model or pick policy, run
 `uv run evaluate_opponents.py` and compare its replay accuracy.
+
+## In season
+
+Each week, export two GridironAI rankings CSVs with the league's scoring selected and
+save them at the repo root under the site's names for ESPN's current week:
+`gridironai-rankings-<season>-<week>.csv` (this week, D/ST included) and
+`gridironai-rankings-<season>-rest-of-season-from-week-<week>.csv`. Then:
+
+```bash
+uv run weekly.py
+```
+
+It fetches the league (`league_pipeline/fetch_league.py`), then prints the lineup and the
+claim list. It submits nothing to ESPN. Run it before waivers process for the claims, and
+again before kickoff once claims have cleared and projections have moved.
+
+- Lineup: maximizes this week's expected points, Swanson's 0.3/0.4/0.3 over
+  GridironAI's weekly quantiles. Players whose game has started keep their slot, and IR
+  stays IR
+- Claims: each add is valued at its rest-of-season change in expected optimal lineup
+  points. This is the ranker's roster objective (`ranker/value.py`), repricing every
+  player at the wire plus his truncated expected value above it. The wire and the
+  fallback body are the best available players other than the add. Each add takes its
+  best drop and must clear a +3 rest-of-season gain (`MIN_CLAIM_GAIN`). The list comes
+  in rounds: a round's claims share a drop, so at most one wins, and each round assumes
+  the round before won its first claim
+- D/ST: weekly start/sit uses GridironAI's weekly D/ST projection. Rest-of-season D/ST
+  value is ESPN's projection, since GridironAI publishes none. Available players
+  GridironAI does not list are not considered, and the biggest are named in a warning
 
 ## Dashboard and automation
 

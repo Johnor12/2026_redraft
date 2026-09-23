@@ -24,7 +24,8 @@ One request to ESPN's undocumented v3 league API answers everything: the league
 endpoint with the `mDraftDetail` (picks), `mSettings` (draft order and roster shape),
 and `mTeam` (teams and members) views. The league id, season, and my SWID/espn_s2
 auth cookies are hardcoded at the top of `fetch_draft.py`; refresh the cookies from a
-logged-in browser session when ESPN answers 401/403.
+logged-in browser session when ESPN answers 401/403. `league_pipeline/fetch_league.py`
+imports the same constants.
 
 The only on-disk input is the pool pipeline's cached Sleeper player dump, which carries
 `espn_id` and translates ESPN player ids into `sleeper_id` (D/ST uses ESPN's fixed
