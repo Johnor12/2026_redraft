@@ -26,7 +26,8 @@ ordered add/drop claim list rather than bids. A claim is worth its rest-of-seaso
 expected optimal lineup points — the draft ranker's roster objective (ranker/value.py) —
 with every player repriced at the wire plus his truncated expected value above it. Both the
 wire and the one fallback body per position are the best available players other than the
-add: the alternative to claiming him is losing him. Each add takes its best drop.
+add: the alternative to claiming him is losing him. Each add takes its best drop. A player
+priced at the wire is skipped: he is any free agent, and one can be signed any time.
 
 The list is built in rounds to match how ESPN processes it. A round is the best claim
 followed by the next-best claims with the same drop: a claim lost to a team ahead in
@@ -68,7 +69,6 @@ STARTERS = {**league.STARTING_SLOTS, "D/ST": 1}
 SLOT_CHAIN = {**league.SLOT_CHAIN, "D/ST": ("D/ST",)}
 LINEUP_SLOTS = {**STARTERS, "BE": league.BENCH_SLOTS, "IR": league.IR_SLOTS}
 SLOT_ORDER = ("QB", "RB", "WR", "TE", "FLEX", "D/ST", "BE", "IR")
-POSITIONS = (*league.POSITIONS, "D/ST")
 
 # ESPN keeps a player placed in IR while Out legal after an upgrade to Q or D; one left
 # there once healthy blocks roster moves until he is activated or dropped.
@@ -257,8 +257,9 @@ def lineup_points(roster: list[Player], lineup: dict[int, str]) -> float:
 def roster_value(roster: list[Player], wire: dict[str, float]) -> float:
     """Rest-of-season expected optimal lineup points."""
     offense = [p for p in roster if p.position != "D/ST"]
-    # One D/ST slot and no flex: the best defense, rostered or the wire's, starts.
-    dst = max([p.points for p in roster if p.position == "D/ST"] + [wire["D/ST"]])
+    # One D/ST slot, no flex, and only a rostered defense can start: the wire's is no
+    # free substitute, since starting it would cost a roster spot.
+    dst = max((p.points for p in roster if p.position == "D/ST"), default=0.0)
     return expected_lineup_value(offense, wire) + dst
 
 
@@ -274,7 +275,7 @@ def priced(
         pos: sorted(
             (p for p in pool if p.position == pos), key=lambda p: (-p.points, p.player_id)
         )[:2]
-        for pos in POSITIONS
+        for pos in league.POSITIONS
     }
     return roster, {p.player_id: p for p in pool}, top
 
@@ -309,9 +310,13 @@ def rank_claims(mine: list[Player], available: list[Player], limits: dict) -> li
             boards[key] = priced(mine, available, baseline)
         roster, pool, top = boards[key]
         candidate = pool[add.player_id]
+        # Priced at the wire he is any free agent: the extra body may be worth having,
+        # but claiming him spends priority on one that can be signed any time.
+        if add.position != "D/ST" and candidate.points <= baseline[add.position]:
+            continue
         wire = {
             pos: next((p.points for p in top[pos] if p is not candidate), 0.0)
-            for pos in POSITIONS
+            for pos in league.POSITIONS
         }
         base = roster_value(roster, wire)
 

@@ -168,12 +168,15 @@ again before kickoff once claims have cleared and projections have moved.
   points. This is the ranker's roster objective (`ranker/value.py`), repricing every
   player at the wire plus his truncated expected value above it. The wire and the
   fallback body are the best available players other than the add. Each add takes its
-  best drop and must clear a +3 rest-of-season gain (`MIN_CLAIM_GAIN`). The list comes
+  best drop and must clear a +3 rest-of-season gain (`MIN_CLAIM_GAIN`); a player priced
+  at the wire is skipped, since an equivalent body can be signed any time. The list comes
   in rounds: a round's claims share a drop, so at most one wins, and each round assumes
   the round before won its first claim
 - D/ST: weekly start/sit uses GridironAI's weekly D/ST projection. Rest-of-season D/ST
-  value is ESPN's projection, since GridironAI publishes none. Available players
-  GridironAI does not list are not considered, and the biggest are named in a warning
+  value is ESPN's projection, since GridironAI publishes none, and only a rostered D/ST
+  counts: the wire's is no free substitute, since starting it would cost a roster spot.
+  Available players GridironAI does not list are not considered, and the biggest are
+  named in a warning
 
 ## Dashboard and automation
 
