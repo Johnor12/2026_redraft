@@ -47,8 +47,8 @@ data_source_investigator/ ────> data_source_matches.json
 
 In season:
 
-league_pipeline/ ──────────────> league.json ───────┐
-GridironAI weekly + rest-of-season CSVs ────────────┴─> weekly.py ──> lineup + claims
+league_pipeline/fetch_league.py ───> league.json ───────────────────┐
+league_pipeline/fetch_gridiron.py ─> gridironai-rankings-*.csv (two) ┴─> weekly.py ──> lineup + claims
 ```
 
 The published files have distinct owners:
@@ -79,9 +79,9 @@ id and joins GridironAI to them by name.
 - [Ranker](ranker/README.md): wire-level solver, opponent simulation, planning,
   and output contracts
 - [League pipeline](league_pipeline/README.md): ESPN league API to the in-season
-  `league.json`
-- `weekly.py`: refreshes `league.json`, then prints this week's optimal lineup and the
-  ranked waiver claims
+  `league.json`, and GridironAI's login-gated export to the two weekly rankings CSVs
+- `weekly.py`: refreshes `league.json` and the GridironAI CSVs, then prints this week's
+  optimal lineup and the ranked waiver claims
 - `index.html`: dependency-free dashboard for `rankings.json`
 - `data_source_investigator/index.html`: source-fit and pick-evidence dashboard
 - `serve.py`: serves both dashboards at http://127.0.0.1:8123
@@ -148,18 +148,20 @@ Before and after changing an opponent model or pick policy, run
 
 ## In season
 
-Each week, export two GridironAI rankings CSVs with the league's scoring selected and
-save them at the repo root under the site's names for ESPN's current week:
-`gridironai-rankings-<season>-<week>.csv` (this week, D/ST included) and
-`gridironai-rankings-<season>-rest-of-season-from-week-<week>.csv`. Then:
+Each week:
 
 ```bash
 uv run weekly.py
 ```
 
-It fetches the league (`league_pipeline/fetch_league.py`), then prints the lineup and the
-claim list. It submits nothing to ESPN. Run it before waivers process for the claims, and
-again before kickoff once claims have cleared and projections have moved.
+It fetches the league (`league_pipeline/fetch_league.py`), downloads GridironAI's two
+rankings CSVs for this league's team on the site (`league_pipeline/fetch_gridiron.py`),
+then prints the lineup and the claim list. The CSVs land at the repo root under the
+site's own names, `gridironai-rankings-<season>-<week>.csv` (this week, D/ST included)
+and `gridironai-rankings-<season>-rest-of-season-from-week-<week>.csv`, and the
+optimizer reads the pair for ESPN's current week, so it stops if GridironAI has not
+rolled to that week yet. It submits nothing to ESPN. Run it before waivers process for
+the claims, and again before kickoff once claims have cleared and projections have moved.
 
 - Lineup: maximizes this week's expected points, Swanson's 0.3/0.4/0.3 over
   GridironAI's weekly quantiles. Players whose game has started keep their slot, and IR

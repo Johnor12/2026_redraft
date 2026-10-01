@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
 """Refresh the ESPN league state, then optimize this week's lineup and my waiver claims.
 
-Two steps:
+Three steps:
 
-    1. league_pipeline/fetch_league.py   ESPN league API -> league.json
-    2. this script                       league.json + GridironAI exports -> stdout
+    1. league_pipeline/fetch_league.py     ESPN league API -> league.json
+    2. league_pipeline/fetch_gridiron.py   GridironAI -> two rankings CSVs at the repo root
+    3. this script                         league.json + GridironAI exports -> stdout
 
-Projections are GridironAI's, exported from the site with this league's scoring selected
-and saved at the repo root for ESPN's current scoring period:
+Projections are GridironAI's, downloaded from the site for this league's team there (its
+scoring is configured on the site) and saved under the site's own names, which carry
+GridironAI's current week:
 
     gridironai-rankings-<season>-<week>.csv                           this week, D/ST included
     gridironai-rankings-<season>-rest-of-season-from-week-<week>.csv  rest of season, no D/ST
+
+The optimizer reads the pair for ESPN's current scoring period, so it stops when
+GridironAI has not rolled to ESPN's week yet.
 
 Offense joins to ESPN by name through the pool pipeline's GridironAI matcher, D/ST by
 team. GridironAI publishes no rest-of-season D/ST, so that one value is ESPN's own
@@ -426,15 +431,18 @@ def report(document: dict, mine: list[Player], claims: list[Claim]) -> None:
 
 
 def main() -> int:
-    print("\n=== [1/2] league ===", file=sys.stderr)
-    code = subprocess.run(
-        ["uv", "run", "league_pipeline/fetch_league.py"], cwd=REPO_ROOT
-    ).returncode
-    if code != 0:
-        print(f"weekly failed at step 'league' (exit {code})", file=sys.stderr)
-        return code
+    fetches = [
+        ("league", "league_pipeline/fetch_league.py"),
+        ("gridiron", "league_pipeline/fetch_gridiron.py"),
+    ]
+    for number, (name, script) in enumerate(fetches, start=1):
+        print(f"\n=== [{number}/3] {name} ===", file=sys.stderr)
+        code = subprocess.run(["uv", "run", script], cwd=REPO_ROOT).returncode
+        if code != 0:
+            print(f"weekly failed at step '{name}' (exit {code})", file=sys.stderr)
+            return code
 
-    print("\n=== [2/2] optimize ===", file=sys.stderr)
+    print("\n=== [3/3] optimize ===", file=sys.stderr)
     document = json.loads(LEAGUE.read_text(encoding="utf-8"))
     if document["lineup_slots"] != LINEUP_SLOTS:
         print(
@@ -452,8 +460,8 @@ def main() -> int:
     missing = [path.name for path in (weekly, ros) if not path.is_file()]
     if missing:
         print(
-            f"error: missing {', '.join(missing)} — export GridironAI's week {week} and "
-            f"rest-of-season rankings (league scoring) to the repo root",
+            f"error: missing {', '.join(missing)} — GridironAI has not rolled to ESPN's "
+            f"week {week} yet",
             file=sys.stderr,
         )
         return 1

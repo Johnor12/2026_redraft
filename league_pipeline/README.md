@@ -42,3 +42,25 @@ scoring period and `espn_ros`, ESPN's in-season season split. That split is a
 rest-of-season projection through week 18: a healthy player at week 3 carries 15 games
 (weeks 3–18 minus his bye). `weekly.py` prices from GridironAI and reads `espn_ros` only
 for D/ST, which GridironAI does not project past the current week.
+
+## `fetch_gridiron.py`
+
+`fetch_gridiron.py` downloads the two GridironAI rankings CSVs `weekly.py` reads and
+writes them to the repo root under the site's own file names. `weekly.py` runs it as its
+second step.
+
+```bash
+uv run league_pipeline/fetch_gridiron.py
+```
+
+GridironAI is an Angular app over a Django API, so no browser is involved: one JSON POST
+to `/customer/login/` sets the session cookie, and the rankings page's Download button is
+a GET of `/app/fantasy-team/2568/player-rankings/` with `response_type=csv` (this week)
+or `response_type=csv&board=ros` (rest of season). Team 2568 is this league's team on
+the site, where its scoring is configured, so the export is league-scored; it carries
+every position and column regardless of the page's `pos=`/`cols=` view state. The site
+names the files (`Content-Disposition`) with its own current week, which is normally
+ESPN's; `weekly.py` reads the pair for ESPN's week and stops when they differ. The login
+email is a constant at the top of the script; the password is `GRIDIRON_PASSWORD`, read
+from the environment or the git-ignored `.env` at the repo root, and prompted for when
+neither has it.
