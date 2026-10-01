@@ -2,10 +2,11 @@
 """Fetch the ESPN league's in-season state and publish it as league.json.
 
 Two requests to ESPN's undocumented v3 league API answer everything the weekly optimizer
-needs. The league endpoint with the `mSettings`, `mTeam`, `mRoster` and `mStatus` views
-gives the lineup shape, position caps, waiver settings and order, the current scoring
-period, and my roster with its lineup slots. The `kona_player_info` view, filtered to
-free agents and waiver players at QB/RB/WR/TE/D/ST, gives everyone I could add.
+and the trade pricer need. The league endpoint with the `mSettings`, `mTeam`, `mRoster` and
+`mStatus` views gives the lineup shape, position caps, waiver settings and order, the
+current scoring period, and every team's roster with its lineup slots, record and trade
+count. The `kona_player_info` view, filtered to free agents and waiver players at
+QB/RB/WR/TE/D/ST, gives everyone I could add.
 
 Every player row keeps ESPN's own league-scored projections: `espn_week` for the current
 scoring period and `espn_ros`, ESPN's in-season season-split projection, which covers the
@@ -116,7 +117,9 @@ def build(league: dict, pool: dict) -> dict:
         if not count:
             continue
         if int(slot_id) not in SLOTS:
-            raise ValueError(f"the league uses ESPN lineup slot {slot_id}, which is not modeled")
+            raise ValueError(
+                f"the league uses ESPN lineup slot {slot_id}, which is not modeled"
+            )
         slots[SLOTS[int(slot_id)]] = count
     limits = {
         pos: (None if limit < 0 else limit)
@@ -124,24 +127,47 @@ def build(league: dict, pool: dict) -> dict:
         for limit in [roster_settings["positionLimits"][str(pos_id)]]
     }
 
-    mine = next((t for t in league["teams"] if MY_SWID in (t.get("owners") or [])), None)
+    mine = next(
+        (t for t in league["teams"] if MY_SWID in (t.get("owners") or [])), None
+    )
     if mine is None:
         raise ValueError(f"no team in league {LEAGUE_ID} is owned by {MY_SWID}")
 
-    players = []
-    for entry in mine["roster"]["entries"]:
-        pool_entry = entry["playerPoolEntry"]
-        players.append(
+    def roster_rows(team: dict, **fields) -> list[dict]:
+        return [
             player_row(
-                pool_entry["player"],
+                entry["playerPoolEntry"]["player"],
                 period,
-                status="MINE",
                 lineup_slot=SLOTS[entry["lineupSlotId"]],
-                locked=pool_entry["lineupLocked"],
-                droppable=pool_entry["player"]["droppable"],
-                waivers_clear_at=None,
+                locked=entry["playerPoolEntry"]["lineupLocked"],
+                droppable=entry["playerPoolEntry"]["player"]["droppable"],
+                **fields,
             )
+            for entry in team["roster"]["entries"]
+        ]
+
+    # Every roster, for trade.py; weekly.py keeps reading mine from `players`.
+    members = {
+        m["id"]: f"{m.get('firstName', '')} {m.get('lastName', '')}".strip()
+        for m in league.get("members") or []
+    }
+    teams = []
+    for team in league["teams"]:
+        record = team.get("record", {}).get("overall", {})
+        teams.append(
+            {
+                "team_id": team["id"],
+                "name": team.get("name"),
+                "abbrev": team.get("abbrev"),
+                "owner": ", ".join(members.get(o, o) for o in team.get("owners") or []),
+                "wins": record.get("wins"),
+                "losses": record.get("losses"),
+                "trades": (team.get("transactionCounter") or {}).get("trades", 0),
+                "roster": roster_rows(team),
+            }
         )
+
+    players = roster_rows(mine, status="MINE", waivers_clear_at=None)
     for pool_entry in pool["players"]:
         clears = pool_entry.get("waiverProcessDate")
         players.append(
@@ -153,7 +179,9 @@ def build(league: dict, pool: dict) -> dict:
                 locked=pool_entry["lineupLocked"],
                 droppable=None,
                 waivers_clear_at=(
-                    dt.datetime.fromtimestamp(clears / 1000, dt.timezone.utc).isoformat()
+                    dt.datetime.fromtimestamp(
+                        clears / 1000, dt.timezone.utc
+                    ).isoformat()
                     if pool_entry["status"] == "WAIVERS" and clears
                     else None
                 ),
@@ -176,14 +204,14 @@ def build(league: dict, pool: dict) -> dict:
         },
         "lineup_slots": slots,
         "position_limits": limits,
+        "teams": teams,
         "players": players,
     }
 
 
 def main() -> int:
-    league_url = (
-        f"{API}/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}?"
-        + "&".join(f"view={view}" for view in LEAGUE_VIEWS)
+    league_url = f"{API}/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}?" + "&".join(
+        f"view={view}" for view in LEAGUE_VIEWS
     )
     print(f"GET {league_url}", file=sys.stderr)
     try:
@@ -221,7 +249,10 @@ def main() -> int:
     try:
         document = build(league, pool)
     except (KeyError, TypeError, ValueError) as exc:
-        print(f"error: league {LEAGUE_ID} is not shaped as expected: {exc!r}", file=sys.stderr)
+        print(
+            f"error: league {LEAGUE_ID} is not shaped as expected: {exc!r}",
+            file=sys.stderr,
+        )
         return 1
 
     with OUTPUT.open("w", encoding="utf-8") as handle:

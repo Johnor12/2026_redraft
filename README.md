@@ -47,8 +47,9 @@ data_source_investigator/ ────> data_source_matches.json
 
 In season:
 
-league_pipeline/fetch_league.py ───> league.json ───────────────────┐
-league_pipeline/fetch_gridiron.py ─> gridironai-rankings-*.csv (two) ┴─> weekly.py ──> lineup + claims
+league_pipeline/fetch_league.py ──────> league.json ─────────────────────┬─> weekly.py ──> lineup + claims
+league_pipeline/fetch_gridiron.py ────> gridironai-rankings-*.csv (two) ─┤
+league_pipeline/fetch_fantasypros.py ─> fantasypros.json ────────────────┴─> trade.py ───> trade prices
 ```
 
 The published files have distinct owners:
@@ -63,8 +64,11 @@ The published files have distinct owners:
   (ESPN's read API lags the draft room by minutes or more)
 - `data_source_matches.json`: the provider board closest to each opponent's picks
 - `rankings.json`: undrafted-player rankings, recommendations, simulations, and validation
-- `league.json`: the in-season ESPN state — my roster and lineup slots, every available
-  player, waiver order, and ESPN's own weekly and rest-of-season projections
+- `league.json`: the in-season ESPN state — my roster and lineup slots, every team's
+  roster with its record and trade count, every available player, waiver order, and
+  ESPN's own weekly and rest-of-season projections
+- `fantasypros.json`: FantasyPros' rest-of-season half-PPR expert consensus, the table
+  embedded in the rankings page as published
 
 `sleeper_id` is the cross-process player key. `roster_id` and `draft_slot` connect
 opponent source matches to the live board. In season, `weekly.py` keys players by ESPN
@@ -79,9 +83,12 @@ id and joins GridironAI to them by name.
 - [Ranker](ranker/README.md): wire-level solver, opponent simulation, planning,
   and output contracts
 - [League pipeline](league_pipeline/README.md): ESPN league API to the in-season
-  `league.json`, and GridironAI's login-gated export to the two weekly rankings CSVs
+  `league.json`, GridironAI's login-gated export to the two weekly rankings CSVs, and
+  FantasyPros' consensus to `fantasypros.json`
 - `weekly.py`: refreshes `league.json` and the GridironAI CSVs, then prints this week's
   optimal lineup and the ranked waiver claims
+- `trade.py`: refreshes `league.json` and `fantasypros.json`, then prices a trade with
+  one opponent or sweeps every simple package with one or all of them
 - `index.html`: dependency-free dashboard for `rankings.json`
 - `data_source_investigator/index.html`: source-fit and pick-evidence dashboard
 - `serve.py`: serves both dashboards at http://127.0.0.1:8123
@@ -179,6 +186,38 @@ the claims, and again before kickoff once claims have cleared and projections ha
   counts: the wire's is no free substitute, since starting it would cost a roster spot.
   Available players GridironAI does not list are not considered, and the biggest are
   named in a warning
+
+To price a trade, or to look for one:
+
+```bash
+uv run trade.py "Fell For It" --send "Bucky Irving" --get "Rashee Rice"
+uv run trade.py "Fell For It"
+uv run trade.py
+```
+
+It refreshes `league.json` and `fantasypros.json` (`league_pipeline/fetch_fantasypros.py`),
+reuses the GridironAI CSVs `weekly.py` downloaded, then prints my rest-of-season change in
+expected optimal lineup points and this week's lineup change, the opponent's change as the
+ESPN app and FantasyPros show it, and a heuristic acceptance chance. Teams match by ESPN id
+or part of the name, players by part of the name. Without a package it sweeps every
+package of up to three players a side with that opponent, or with every opponent when no
+team is named, ranked by my gain times acceptance. Nothing is submitted to ESPN.
+
+- Lenses: my side is valued on GridironAI's quantiles repriced at the wire, exactly as the
+  claims are. The opponent's side is valued on ESPN's rest-of-season projection and on
+  FantasyPros' consensus, each positional rank mapped onto GridironAI's positional point
+  curve so both read in the same units
+- Both rosters are settled before and after the trade with the free moves open to them
+  anyway (drop over a cap, sign the best free agent, improving drop-and-sign swaps), so a
+  2-for-1 gets no credit for the free agent it makes room for
+- Replacement level is free agents only, filtered by GridironAI's injury-aware median: a
+  waiver player is one claim, and ESPN's rest-of-season numbers ignore injuries
+- Acceptance is a heuristic logistic on the opponent's gain in whichever consensus lens is
+  less favorable to him, with a penalty for asking for a top-36 consensus player; an
+  even-looking deal reads ~40%, +10 for him ~70%
+- The sweep drops throw-ins (a player either side cuts at once) and packages that sell my
+  starting QB without one back: the ranker's upside repricing puts free-agent QB ceilings
+  near my starter, so those look free
 
 ## Dashboard and automation
 

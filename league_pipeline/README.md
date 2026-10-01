@@ -7,7 +7,8 @@ on demand. Like the draft pipeline it caches nothing: every run asks ESPN again.
 uv run league_pipeline/fetch_league.py
 ```
 
-`weekly.py` at the repo root runs it as its first step, so it is rarely run by hand.
+`weekly.py` and `trade.py` at the repo root run it as their first step, so it is rarely
+run by hand.
 
 ## Inputs
 
@@ -15,7 +16,7 @@ Two requests to ESPN's undocumented v3 league API:
 
 - the league endpoint with the `mSettings`, `mTeam`, `mRoster`, and `mStatus` views:
   lineup slot counts, position caps, waiver settings and order, the current scoring
-  period, and my roster with its lineup slots
+  period, and every team's roster with its lineup slots, record and trade count
 - the `kona_player_info` view with an `x-fantasy-filter` header: every free agent and
   waiver player at QB/RB/WR/TE/D/ST (~850 players). ESPN answers 400 to a filter
   without a sort, and a response that fills the page limit is treated as truncated
@@ -32,6 +33,9 @@ The league id, season, and SWID/espn_s2 cookies are imported from
 - `lineup_slots`: nonzero ESPN slot counts by name (`QB`, `RB`, `WR`, `TE`, `FLEX`,
   `D/ST`, `BE`, `IR`); an unmodeled slot type is fatal
 - `position_limits`: ESPN's roster caps per position, null when unlimited
+- `teams`: every team's `team_id`, name, abbreviation, owner, wins, losses, trades made
+  this season, and `roster` rows (the player fields below minus `status` and
+  `waivers_clear_at`); `trade.py` reads them, and my own roster also appears here
 - `players`: my roster (`status` `MINE`) followed by every available player (`FREEAGENT`
   or `WAIVERS`). Each row carries `espn_id`, name, position, NFL team, ESPN
   `injury_status`, `lineup_slot` (mine only), `locked` (game started),
@@ -64,3 +68,21 @@ ESPN's; `weekly.py` reads the pair for ESPN's week and stops when they differ. T
 email is a constant at the top of the script; the password is `GRIDIRON_PASSWORD`, read
 from the environment or the git-ignored `.env` at the repo root, and prompted for when
 neither has it.
+
+## `fetch_fantasypros.py`
+
+`fetch_fantasypros.py` downloads FantasyPros' rest-of-season half-PPR expert consensus
+rankings and publishes them as `fantasypros.json` at the repo root. `trade.py` runs it as
+its second step and uses it as the market's view of every player.
+
+```bash
+uv run league_pipeline/fetch_fantasypros.py
+```
+
+The rankings page embeds its table as `var ecrData = {...};` in a script tag, so one GET
+with a browser user agent and a regex are enough; there is no login. The object is written
+as-is: `players` rows carry `player_name`, `player_team_id`, `player_position_id`,
+`pos_rank` (`"WR22"`), `rank_ecr` (overall) and `rank_std`, and `last_updated` and
+`total_experts` describe the consensus. Half PPR is this league's scoring, so the URL is
+fixed. `trade.py` joins the rows to ESPN players by name through the pool pipeline's
+matcher, full-name tiers only.

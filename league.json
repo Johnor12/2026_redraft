@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-30T23:50:11+00:00",
+  "fetched_at": "2026-10-01T02:03:09+00:00",
   "league_id": "96498436",
   "league_name": "Respect is Earned.",
   "season": 2026,
@@ -32,6 +32,1750 @@
     "TE": 3,
     "D/ST": 3
   },
+  "teams": [
+    {
+      "team_id": 1,
+      "name": "Fell For It Again",
+      "abbrev": "FFIA",
+      "owner": "Ned Harrell",
+      "wins": 2,
+      "losses": 1,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4426515,
+          "name": "Puka Nacua",
+          "position": "WR",
+          "team": "LAR",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 16.93,
+          "espn_ros": 243.6
+        },
+        {
+          "espn_id": 4567048,
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "team": "KC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.87,
+          "espn_ros": 260.96
+        },
+        {
+          "espn_id": 4432665,
+          "name": "Brock Bowers",
+          "position": "TE",
+          "team": "LV",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 12.67,
+          "espn_ros": 171.58
+        },
+        {
+          "espn_id": 4429615,
+          "name": "Zay Flowers",
+          "position": "WR",
+          "team": "BAL",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.96,
+          "espn_ros": 178.7
+        },
+        {
+          "espn_id": 4428331,
+          "name": "Rashee Rice",
+          "position": "WR",
+          "team": "KC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.13,
+          "espn_ros": 169.84
+        },
+        {
+          "espn_id": 4685278,
+          "name": "Luther Burden III",
+          "position": "WR",
+          "team": "CHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.15,
+          "espn_ros": 141.58
+        },
+        {
+          "espn_id": 4569173,
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "team": "NE",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.24,
+          "espn_ros": 145.15
+        },
+        {
+          "espn_id": 4038815,
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "team": "PIT",
+          "injury_status": "OUT",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 105.37
+        },
+        {
+          "espn_id": 4241985,
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "team": "DEN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.57,
+          "espn_ros": 149.96
+        },
+        {
+          "espn_id": 4701936,
+          "name": "Matthew Golden",
+          "position": "WR",
+          "team": "GB",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.6,
+          "espn_ros": 154.96
+        },
+        {
+          "espn_id": 3139477,
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "team": "KC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.65,
+          "espn_ros": 259.02
+        },
+        {
+          "espn_id": 4697815,
+          "name": "Rachaad White",
+          "position": "RB",
+          "team": "WAS",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.23,
+          "espn_ros": 94.4
+        },
+        {
+          "espn_id": -16016,
+          "name": "Vikings D/ST",
+          "position": "D/ST",
+          "team": "MIN",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.3,
+          "espn_ros": 119.66
+        },
+        {
+          "espn_id": 12483,
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "team": "LAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 16.4,
+          "espn_ros": 245.06
+        }
+      ]
+    },
+    {
+      "team_id": 2,
+      "name": "Gangreen Gang",
+      "abbrev": "Milk",
+      "owner": "Maxwell Hudson",
+      "wins": 1,
+      "losses": 2,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4242335,
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "team": "IND",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 18.93,
+          "espn_ros": 254.9
+        },
+        {
+          "espn_id": 4426502,
+          "name": "Drake London",
+          "position": "WR",
+          "team": "ATL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 13.71,
+          "espn_ros": 188.02
+        },
+        {
+          "espn_id": 4047365,
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "team": "GB",
+          "injury_status": "DAY_TO_DAY",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 118.48
+        },
+        {
+          "espn_id": 4372016,
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "team": "DEN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.49,
+          "espn_ros": 135.83
+        },
+        {
+          "espn_id": 4685472,
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "team": "CAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.75,
+          "espn_ros": 159.52
+        },
+        {
+          "espn_id": 4882093,
+          "name": "Bhayshul Tuten",
+          "position": "RB",
+          "team": "JAX",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.82,
+          "espn_ros": 167.57
+        },
+        {
+          "espn_id": 5083076,
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "team": "CLE",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.88,
+          "espn_ros": 128.33
+        },
+        {
+          "espn_id": -16034,
+          "name": "Texans D/ST",
+          "position": "D/ST",
+          "team": "HOU",
+          "injury_status": null,
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.74,
+          "espn_ros": 113.37
+        },
+        {
+          "espn_id": 2577417,
+          "name": "Dak Prescott",
+          "position": "QB",
+          "team": "DAL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 17.18,
+          "espn_ros": 260.81
+        },
+        {
+          "espn_id": 3042519,
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "team": "MIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 16.15,
+          "espn_ros": 145.11
+        },
+        {
+          "espn_id": 4569559,
+          "name": "Devaughn Vele",
+          "position": "WR",
+          "team": "NO",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.73,
+          "espn_ros": 85.31
+        },
+        {
+          "espn_id": 4429013,
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "team": "PHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 2.65,
+          "espn_ros": 40.03
+        },
+        {
+          "espn_id": 3054850,
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "team": "NO",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.18,
+          "espn_ros": 93.71
+        },
+        {
+          "espn_id": -16033,
+          "name": "Ravens D/ST",
+          "position": "D/ST",
+          "team": "BAL",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.71,
+          "espn_ros": 104.9
+        }
+      ]
+    },
+    {
+      "team_id": 3,
+      "name": "Barnacle Geese (B. leucopsi)",
+      "abbrev": "JMM",
+      "owner": "Justin Moffitt",
+      "wins": 1,
+      "losses": 2,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4430878,
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "team": "SEA",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 17.4,
+          "espn_ros": 241.34
+        },
+        {
+          "espn_id": 3929630,
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "team": "PHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 13.27,
+          "espn_ros": 199.88
+        },
+        {
+          "espn_id": 4258173,
+          "name": "Nico Collins",
+          "position": "WR",
+          "team": "HOU",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.63,
+          "espn_ros": 173.23
+        },
+        {
+          "espn_id": 4361307,
+          "name": "Trey McBride",
+          "position": "TE",
+          "team": "ARI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 13.76,
+          "espn_ros": 190.3
+        },
+        {
+          "espn_id": 4426388,
+          "name": "Jameson Williams",
+          "position": "WR",
+          "team": "DET",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.74,
+          "espn_ros": 123.25
+        },
+        {
+          "espn_id": 4035538,
+          "name": "David Montgomery",
+          "position": "RB",
+          "team": "HOU",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.52,
+          "espn_ros": 162.54
+        },
+        {
+          "espn_id": 4871023,
+          "name": "Carnell Tate",
+          "position": "WR",
+          "team": "TEN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.61,
+          "espn_ros": 137.09
+        },
+        {
+          "espn_id": 4360310,
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "team": "JAX",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.44,
+          "espn_ros": 264.56
+        },
+        {
+          "espn_id": 4575131,
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "team": "WAS",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.01,
+          "espn_ros": 115.1
+        },
+        {
+          "espn_id": 4429096,
+          "name": "Blake Corum",
+          "position": "RB",
+          "team": "LAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.61,
+          "espn_ros": 114.47
+        },
+        {
+          "espn_id": -16014,
+          "name": "Rams D/ST",
+          "position": "D/ST",
+          "team": "LAR",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.05,
+          "espn_ros": 109.94
+        },
+        {
+          "espn_id": 4429205,
+          "name": "Jordan Addison",
+          "position": "WR",
+          "team": "MIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.68,
+          "espn_ros": 129.32
+        },
+        {
+          "espn_id": 4682745,
+          "name": "Jaylen Wright",
+          "position": "RB",
+          "team": "MIA",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 6.58,
+          "espn_ros": 109.03
+        }
+      ]
+    },
+    {
+      "team_id": 4,
+      "name": "Shripp Frimpburger",
+      "abbrev": "SHRP",
+      "owner": "Wilson Antley",
+      "wins": 0,
+      "losses": 3,
+      "trades": 2,
+      "roster": [
+        {
+          "espn_id": 4262921,
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "team": "MIN",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 15.46,
+          "espn_ros": 208.41
+        },
+        {
+          "espn_id": 4723086,
+          "name": "Colston Loveland",
+          "position": "TE",
+          "team": "CHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.05,
+          "espn_ros": 97.86
+        },
+        {
+          "espn_id": 4259545,
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "team": "CHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 13.62,
+          "espn_ros": 182.81
+        },
+        {
+          "espn_id": 4685512,
+          "name": "Jadarian Price",
+          "position": "RB",
+          "team": "SEA",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.22,
+          "espn_ros": 134.41
+        },
+        {
+          "espn_id": 4431299,
+          "name": "Rome Odunze",
+          "position": "WR",
+          "team": "CHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.44,
+          "espn_ros": 118.24
+        },
+        {
+          "espn_id": 4360569,
+          "name": "Jordan Mason",
+          "position": "RB",
+          "team": "MIN",
+          "injury_status": "INJURY_RESERVE",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 122.19
+        },
+        {
+          "espn_id": 4688813,
+          "name": "Josh Downs",
+          "position": "WR",
+          "team": "IND",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.1,
+          "espn_ros": 124.65
+        },
+        {
+          "espn_id": 4569618,
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "team": "NYJ",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 13.23,
+          "espn_ros": 172.02
+        },
+        {
+          "espn_id": 4360689,
+          "name": "Tyler Shough",
+          "position": "QB",
+          "team": "NO",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.86,
+          "espn_ros": 259.82
+        },
+        {
+          "espn_id": 4570037,
+          "name": "Terrance Ferguson",
+          "position": "TE",
+          "team": "LAR",
+          "injury_status": "DOUBTFUL",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 82.25
+        },
+        {
+          "espn_id": 4567750,
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "team": "TB",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.47,
+          "espn_ros": 133.2
+        },
+        {
+          "espn_id": 4696981,
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "team": "NYG",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 15.14,
+          "espn_ros": 182.45
+        },
+        {
+          "espn_id": -16005,
+          "name": "Browns D/ST",
+          "position": "D/ST",
+          "team": "CLE",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.25,
+          "espn_ros": 83.26
+        },
+        {
+          "espn_id": 4686658,
+          "name": "Mike Washington Jr.",
+          "position": "RB",
+          "team": "LV",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 3.08,
+          "espn_ros": 43.18
+        }
+      ]
+    },
+    {
+      "team_id": 5,
+      "name": "The Nucc Bois",
+      "abbrev": "TNB",
+      "owner": "Nick Husa",
+      "wins": 2,
+      "losses": 1,
+      "trades": 1,
+      "roster": [
+        {
+          "espn_id": 4429795,
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "team": "DET",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 23.82,
+          "espn_ros": 332.7
+        },
+        {
+          "espn_id": 4595348,
+          "name": "Malik Nabers",
+          "position": "WR",
+          "team": "NYG",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.4,
+          "espn_ros": 149.56
+        },
+        {
+          "espn_id": 3918298,
+          "name": "Josh Allen",
+          "position": "QB",
+          "team": "BUF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 22.26,
+          "espn_ros": 316.05
+        },
+        {
+          "espn_id": 16737,
+          "name": "Mike Evans",
+          "position": "WR",
+          "team": "SF",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.34,
+          "espn_ros": 150.29
+        },
+        {
+          "espn_id": 4248528,
+          "name": "Christian Watson",
+          "position": "WR",
+          "team": "GB",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.06,
+          "espn_ros": 175.98
+        },
+        {
+          "espn_id": 4430027,
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "team": "DET",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.98,
+          "espn_ros": 127.28
+        },
+        {
+          "espn_id": 4361529,
+          "name": "Isiah Pacheco",
+          "position": "RB",
+          "team": "DET",
+          "injury_status": "INJURY_RESERVE",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 0.0
+        },
+        {
+          "espn_id": 4362619,
+          "name": "Chris Rodriguez Jr.",
+          "position": "RB",
+          "team": "JAX",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 4.84,
+          "espn_ros": 68.95
+        },
+        {
+          "espn_id": -16008,
+          "name": "Lions D/ST",
+          "position": "D/ST",
+          "team": "DET",
+          "injury_status": null,
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.45,
+          "espn_ros": 72.61
+        },
+        {
+          "espn_id": 4428850,
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "team": "PHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.17,
+          "espn_ros": 105.33
+        },
+        {
+          "espn_id": 4426354,
+          "name": "George Pickens",
+          "position": "WR",
+          "team": "DAL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.24,
+          "espn_ros": 164.31
+        },
+        {
+          "espn_id": 4685382,
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "team": "LAC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.14,
+          "espn_ros": 164.75
+        },
+        {
+          "espn_id": 4869961,
+          "name": "Chris Bell",
+          "position": "WR",
+          "team": "MIA",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.15,
+          "espn_ros": 79.4
+        },
+        {
+          "espn_id": -16003,
+          "name": "Bears D/ST",
+          "position": "D/ST",
+          "team": "CHI",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.02,
+          "espn_ros": 69.42
+        }
+      ]
+    },
+    {
+      "team_id": 6,
+      "name": "Compound Fighting Pugs",
+      "abbrev": "COLD",
+      "owner": "Owen Antley",
+      "wins": 1,
+      "losses": 2,
+      "trades": 1,
+      "roster": [
+        {
+          "espn_id": 3117251,
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "team": "SF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 17.89,
+          "espn_ros": 251.63
+        },
+        {
+          "espn_id": 4870808,
+          "name": "Jeremiyah Love",
+          "position": "RB",
+          "team": "ARI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 14.14,
+          "espn_ros": 186.67
+        },
+        {
+          "espn_id": 4239993,
+          "name": "Tee Higgins",
+          "position": "WR",
+          "team": "CIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.28,
+          "espn_ros": 159.94
+        },
+        {
+          "espn_id": 4431459,
+          "name": "Tyler Warren",
+          "position": "TE",
+          "team": "IND",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.38,
+          "espn_ros": 133.19
+        },
+        {
+          "espn_id": 3915511,
+          "name": "Joe Burrow",
+          "position": "QB",
+          "team": "CIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.18,
+          "espn_ros": 263.92
+        },
+        {
+          "espn_id": 4360761,
+          "name": "Michael Wilson",
+          "position": "WR",
+          "team": "ARI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.86,
+          "espn_ros": 149.91
+        },
+        {
+          "espn_id": 3128429,
+          "name": "Courtland Sutton",
+          "position": "WR",
+          "team": "DEN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.65,
+          "espn_ros": 124.05
+        },
+        {
+          "espn_id": 4870795,
+          "name": "Makai Lemon",
+          "position": "WR",
+          "team": "PHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 6.24,
+          "espn_ros": 77.83
+        },
+        {
+          "espn_id": 3126486,
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "team": "SF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.0,
+          "espn_ros": 130.17
+        },
+        {
+          "espn_id": 4702555,
+          "name": "Jonah Coleman",
+          "position": "RB",
+          "team": "DEN",
+          "injury_status": "INJURY_RESERVE",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 0.0
+        },
+        {
+          "espn_id": 4362628,
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "team": "CIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 16.55,
+          "espn_ros": 234.21
+        },
+        {
+          "espn_id": 4683062,
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "team": "KC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.26,
+          "espn_ros": 115.6
+        },
+        {
+          "espn_id": 4696044,
+          "name": "Kaelon Black",
+          "position": "RB",
+          "team": "SF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.22,
+          "espn_ros": 71.85
+        },
+        {
+          "espn_id": -16002,
+          "name": "Bills D/ST",
+          "position": "D/ST",
+          "team": "BUF",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.09,
+          "espn_ros": 75.85
+        }
+      ]
+    },
+    {
+      "team_id": 7,
+      "name": "Chudwick",
+      "abbrev": "AAT",
+      "owner": "Andrew Chadwick",
+      "wins": 2,
+      "losses": 1,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4430807,
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "team": "ATL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 19.52,
+          "espn_ros": 266.75
+        },
+        {
+          "espn_id": 4047646,
+          "name": "A.J. Brown",
+          "position": "WR",
+          "team": "NE",
+          "injury_status": "INJURY_RESERVE",
+          "lineup_slot": "IR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 115.07
+        },
+        {
+          "espn_id": 4241478,
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "team": "PHI",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.52,
+          "espn_ros": 173.4
+        },
+        {
+          "espn_id": 4239996,
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "team": "NO",
+          "injury_status": "OUT",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 137.17
+        },
+        {
+          "espn_id": 4432620,
+          "name": "Parker Washington",
+          "position": "WR",
+          "team": "JAX",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.58,
+          "espn_ros": 177.27
+        },
+        {
+          "espn_id": 2976212,
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "team": "WAS",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.27,
+          "espn_ros": 121.18
+        },
+        {
+          "espn_id": 3040151,
+          "name": "George Kittle",
+          "position": "TE",
+          "team": "SF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.28,
+          "espn_ros": 163.16
+        },
+        {
+          "espn_id": 3929645,
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "team": "NO",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.59,
+          "espn_ros": 113.35
+        },
+        {
+          "espn_id": -16026,
+          "name": "Seahawks D/ST",
+          "position": "D/ST",
+          "team": "SEA",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.48,
+          "espn_ros": 114.0
+        },
+        {
+          "espn_id": 4361741,
+          "name": "Brock Purdy",
+          "position": "QB",
+          "team": "SF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 18.65,
+          "espn_ros": 271.92
+        },
+        {
+          "espn_id": 4685247,
+          "name": "Braelon Allen",
+          "position": "RB",
+          "team": "NYJ",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.9,
+          "espn_ros": 87.02
+        },
+        {
+          "espn_id": 5083315,
+          "name": "Kenyon Sadiq",
+          "position": "TE",
+          "team": "NYJ",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.8,
+          "espn_ros": 103.02
+        },
+        {
+          "espn_id": 4596334,
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "team": "LAC",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 4.19,
+          "espn_ros": 65.54
+        },
+        {
+          "espn_id": 4426385,
+          "name": "Zach Charbonnet",
+          "position": "RB",
+          "team": "SEA",
+          "injury_status": "OUT",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 133.17
+        }
+      ]
+    },
+    {
+      "team_id": 8,
+      "name": "Brandon Aubrey ❤️",
+      "abbrev": "BA❤️",
+      "owner": "John McGue",
+      "wins": 2,
+      "losses": 1,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4374302,
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "team": "DET",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 16.48,
+          "espn_ros": 232.65
+        },
+        {
+          "espn_id": 4890973,
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "team": "LV",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 16.56,
+          "espn_ros": 229.24
+        },
+        {
+          "espn_id": 4430737,
+          "name": "Kyren Williams",
+          "position": "RB",
+          "team": "LAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.83,
+          "espn_ros": 176.86
+        },
+        {
+          "espn_id": 4612826,
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "team": "LAC",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.22,
+          "espn_ros": 125.4
+        },
+        {
+          "espn_id": 4596448,
+          "name": "Bucky Irving",
+          "position": "RB",
+          "team": "TB",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 15.45,
+          "espn_ros": 206.51
+        },
+        {
+          "espn_id": 4432710,
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "team": "NE",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.78,
+          "espn_ros": 126.27
+        },
+        {
+          "espn_id": 4568490,
+          "name": "RJ Harvey",
+          "position": "RB",
+          "team": "DEN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.19,
+          "espn_ros": 119.55
+        },
+        {
+          "espn_id": 15847,
+          "name": "Travis Kelce",
+          "position": "TE",
+          "team": "KC",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.54,
+          "espn_ros": 133.54
+        },
+        {
+          "espn_id": -16023,
+          "name": "Steelers D/ST",
+          "position": "D/ST",
+          "team": "PIT",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 9.12,
+          "espn_ros": 107.95
+        },
+        {
+          "espn_id": 3916148,
+          "name": "Tony Pollard",
+          "position": "RB",
+          "team": "TEN",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.72,
+          "espn_ros": 160.41
+        },
+        {
+          "espn_id": 4608686,
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "team": "CHI",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.68,
+          "espn_ros": 103.31
+        },
+        {
+          "espn_id": 4685720,
+          "name": "Bryce Young",
+          "position": "QB",
+          "team": "CAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 20.11,
+          "espn_ros": 236.79
+        },
+        {
+          "espn_id": 4047650,
+          "name": "DK Metcalf",
+          "position": "WR",
+          "team": "PIT",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.49,
+          "espn_ros": 123.06
+        }
+      ]
+    },
+    {
+      "team_id": 9,
+      "name": "Liverpool",
+      "abbrev": "LVP",
+      "owner": "Bastien Bacro-Duverger",
+      "wins": 1,
+      "losses": 2,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4241389,
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "team": "DAL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 13.65,
+          "espn_ros": 199.06
+        },
+        {
+          "espn_id": 4362238,
+          "name": "Chase Brown",
+          "position": "RB",
+          "team": "CIN",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 14.27,
+          "espn_ros": 210.25
+        },
+        {
+          "espn_id": 4361370,
+          "name": "Chris Olave",
+          "position": "WR",
+          "team": "NO",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 15.07,
+          "espn_ros": 185.38
+        },
+        {
+          "espn_id": 4427366,
+          "name": "Breece Hall",
+          "position": "RB",
+          "team": "NYJ",
+          "injury_status": "DOUBTFUL",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 192.73
+        },
+        {
+          "espn_id": 4685702,
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "team": "CLE",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 11.41,
+          "espn_ros": 163.41
+        },
+        {
+          "espn_id": 3121422,
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "team": "WAS",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.88,
+          "espn_ros": 143.1
+        },
+        {
+          "espn_id": 4572680,
+          "name": "Tucker Kraft",
+          "position": "TE",
+          "team": "GB",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 6.93,
+          "espn_ros": 100.66
+        },
+        {
+          "espn_id": 4569987,
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "team": "PIT",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 14.98,
+          "espn_ros": 177.45
+        },
+        {
+          "espn_id": 4431611,
+          "name": "Caleb Williams",
+          "position": "QB",
+          "team": "CHI",
+          "injury_status": "DOUBTFUL",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 0.0,
+          "espn_ros": 210.1
+        },
+        {
+          "espn_id": 4241416,
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "team": "CAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 14.85,
+          "espn_ros": 187.0
+        },
+        {
+          "espn_id": 4832800,
+          "name": "Denzel Boston",
+          "position": "WR",
+          "team": "CLE",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.6,
+          "espn_ros": 125.04
+        },
+        {
+          "espn_id": 3046779,
+          "name": "Jared Goff",
+          "position": "QB",
+          "team": "DET",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 17.41,
+          "espn_ros": 245.45
+        },
+        {
+          "espn_id": -16009,
+          "name": "Packers D/ST",
+          "position": "D/ST",
+          "team": "GB",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 6.78,
+          "espn_ros": 56.63
+        }
+      ]
+    },
+    {
+      "team_id": 10,
+      "name": "Nicaraguan Death Squad ",
+      "abbrev": "GBs",
+      "owner": "Erik Ferraro",
+      "wins": 3,
+      "losses": 0,
+      "trades": 0,
+      "roster": [
+        {
+          "espn_id": 4379399,
+          "name": "James Cook III",
+          "position": "RB",
+          "team": "BUF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 16.49,
+          "espn_ros": 227.61
+        },
+        {
+          "espn_id": 3043078,
+          "name": "Derrick Henry",
+          "position": "RB",
+          "team": "BAL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "RB",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 19.54,
+          "espn_ros": 254.84
+        },
+        {
+          "espn_id": 4361579,
+          "name": "Javonte Williams",
+          "position": "RB",
+          "team": "DAL",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 13.29,
+          "espn_ros": 202.32
+        },
+        {
+          "espn_id": 16800,
+          "name": "Davante Adams",
+          "position": "WR",
+          "team": "LAR",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 12.34,
+          "espn_ros": 177.07
+        },
+        {
+          "espn_id": 3915416,
+          "name": "DJ Moore",
+          "position": "WR",
+          "team": "BUF",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "WR",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.83,
+          "espn_ros": 154.49
+        },
+        {
+          "espn_id": 3916387,
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "team": "BAL",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "QB",
+          "locked": false,
+          "droppable": false,
+          "espn_week": 21.14,
+          "espn_ros": 283.3
+        },
+        {
+          "espn_id": 3116165,
+          "name": "Chris Godwin Jr.",
+          "position": "WR",
+          "team": "TB",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.73,
+          "espn_ros": 80.36
+        },
+        {
+          "espn_id": 4695883,
+          "name": "Jalen Coker",
+          "position": "WR",
+          "team": "CAR",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 10.63,
+          "espn_ros": 146.55
+        },
+        {
+          "espn_id": 4429023,
+          "name": "MarShawn Lloyd",
+          "position": "RB",
+          "team": "GB",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 5.95,
+          "espn_ros": 26.17
+        },
+        {
+          "espn_id": -16012,
+          "name": "Chiefs D/ST",
+          "position": "D/ST",
+          "team": "KC",
+          "injury_status": null,
+          "lineup_slot": "D/ST",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 7.13,
+          "espn_ros": 100.8
+        },
+        {
+          "espn_id": 4385690,
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "team": "BUF",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "TE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.61,
+          "espn_ros": 123.07
+        },
+        {
+          "espn_id": 4711533,
+          "name": "Ollie Gordon II",
+          "position": "RB",
+          "team": "MIA",
+          "injury_status": "ACTIVE",
+          "lineup_slot": "FLEX",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.02,
+          "espn_ros": 136.37
+        },
+        {
+          "espn_id": 3916433,
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "team": "JAX",
+          "injury_status": "QUESTIONABLE",
+          "lineup_slot": "BE",
+          "locked": false,
+          "droppable": true,
+          "espn_week": 8.82,
+          "espn_ros": 124.39
+        }
+      ]
+    }
+  ],
   "players": [
     {
       "espn_id": 4374302,
@@ -39,10 +1783,10 @@
       "position": "WR",
       "team": "DET",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "WR",
       "locked": false,
       "droppable": false,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 16.48,
       "espn_ros": 232.65
@@ -53,10 +1797,10 @@
       "position": "RB",
       "team": "LV",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "RB",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 16.56,
       "espn_ros": 229.24
@@ -67,10 +1811,10 @@
       "position": "RB",
       "team": "LAR",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "FLEX",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 11.83,
       "espn_ros": 176.86
@@ -81,10 +1825,10 @@
       "position": "WR",
       "team": "LAC",
       "injury_status": "QUESTIONABLE",
-      "status": "MINE",
       "lineup_slot": "BE",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 9.22,
       "espn_ros": 125.4
@@ -95,10 +1839,10 @@
       "position": "RB",
       "team": "TB",
       "injury_status": "QUESTIONABLE",
-      "status": "MINE",
       "lineup_slot": "FLEX",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 15.45,
       "espn_ros": 206.51
@@ -109,10 +1853,10 @@
       "position": "RB",
       "team": "NE",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "BE",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 8.78,
       "espn_ros": 126.27
@@ -123,10 +1867,10 @@
       "position": "RB",
       "team": "DEN",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "BE",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 8.19,
       "espn_ros": 119.55
@@ -137,10 +1881,10 @@
       "position": "TE",
       "team": "KC",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "TE",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 9.54,
       "espn_ros": 133.54
@@ -151,10 +1895,10 @@
       "position": "D/ST",
       "team": "PIT",
       "injury_status": null,
-      "status": "MINE",
       "lineup_slot": "D/ST",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 9.12,
       "espn_ros": 107.95
@@ -165,10 +1909,10 @@
       "position": "RB",
       "team": "TEN",
       "injury_status": "QUESTIONABLE",
-      "status": "MINE",
       "lineup_slot": "RB",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 10.72,
       "espn_ros": 160.41
@@ -179,10 +1923,10 @@
       "position": "RB",
       "team": "CHI",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "BE",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 7.68,
       "espn_ros": 103.31
@@ -193,10 +1937,10 @@
       "position": "QB",
       "team": "CAR",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "QB",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 20.11,
       "espn_ros": 236.79
@@ -207,10 +1951,10 @@
       "position": "WR",
       "team": "PIT",
       "injury_status": "ACTIVE",
-      "status": "MINE",
       "lineup_slot": "WR",
       "locked": false,
       "droppable": true,
+      "status": "MINE",
       "waivers_clear_at": null,
       "espn_week": 8.49,
       "espn_ros": 123.06
@@ -356,20 +2100,6 @@
       "espn_ros": 110.61
     },
     {
-      "espn_id": 4038941,
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 12.62,
-      "espn_ros": 200.62
-    },
-    {
       "espn_id": 4426338,
       "name": "Bo Nix",
       "position": "QB",
@@ -382,6 +2112,20 @@
       "waivers_clear_at": "2026-10-01T07:00:00+00:00",
       "espn_week": 15.27,
       "espn_ros": 230.86
+    },
+    {
+      "espn_id": 4038941,
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 12.62,
+      "espn_ros": 200.62
     },
     {
       "espn_id": 4432708,
@@ -552,20 +2296,6 @@
       "espn_ros": 84.32
     },
     {
-      "espn_id": -16025,
-      "name": "49ers D/ST",
-      "position": "D/ST",
-      "team": "SF",
-      "injury_status": null,
-      "status": "WAIVERS",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": "2026-10-02T07:00:00+00:00",
-      "espn_week": 6.62,
-      "espn_ros": 95.99
-    },
-    {
       "espn_id": 4429025,
       "name": "Quentin Johnston",
       "position": "WR",
@@ -578,6 +2308,20 @@
       "waivers_clear_at": null,
       "espn_week": 7.02,
       "espn_ros": 105.15
+    },
+    {
+      "espn_id": -16025,
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "team": "SF",
+      "injury_status": null,
+      "status": "WAIVERS",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": "2026-10-02T07:00:00+00:00",
+      "espn_week": 6.62,
+      "espn_ros": 95.99
     },
     {
       "espn_id": -16017,
@@ -706,20 +2450,6 @@
       "espn_ros": 98.82
     },
     {
-      "espn_id": 4685415,
-      "name": "Travis Hunter",
-      "position": "WR",
-      "team": "JAX",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.69,
-      "espn_ros": 9.73
-    },
-    {
       "espn_id": 15818,
       "name": "Keenan Allen",
       "position": "WR",
@@ -732,6 +2462,20 @@
       "waivers_clear_at": null,
       "espn_week": 8.94,
       "espn_ros": 101.38
+    },
+    {
+      "espn_id": 4685415,
+      "name": "Travis Hunter",
+      "position": "WR",
+      "team": "JAX",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.69,
+      "espn_ros": 9.73
     },
     {
       "espn_id": 3052587,
@@ -776,18 +2520,18 @@
       "espn_ros": 101.9
     },
     {
-      "espn_id": 4032473,
-      "name": "Rashid Shaheed",
+      "espn_id": 2973405,
+      "name": "Kalif Raymond",
       "position": "WR",
-      "team": "SEA",
+      "team": "CHI",
       "injury_status": "ACTIVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
       "droppable": null,
       "waivers_clear_at": null,
-      "espn_week": 6.8,
-      "espn_ros": 93.36
+      "espn_week": 7.7,
+      "espn_ros": 107.44
     },
     {
       "espn_id": 4432577,
@@ -804,18 +2548,18 @@
       "espn_ros": 214.89
     },
     {
-      "espn_id": 2973405,
-      "name": "Kalif Raymond",
+      "espn_id": 4032473,
+      "name": "Rashid Shaheed",
       "position": "WR",
-      "team": "CHI",
+      "team": "SEA",
       "injury_status": "ACTIVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
       "droppable": null,
       "waivers_clear_at": null,
-      "espn_week": 7.7,
-      "espn_ros": 107.44
+      "espn_week": 6.8,
+      "espn_ros": 93.36
     },
     {
       "espn_id": 4880281,
@@ -930,20 +2674,6 @@
       "espn_ros": 100.53
     },
     {
-      "espn_id": -16029,
-      "name": "Panthers D/ST",
-      "position": "D/ST",
-      "team": "CAR",
-      "injury_status": null,
-      "status": "WAIVERS",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": "2026-10-01T07:00:00+00:00",
-      "espn_week": 3.08,
-      "espn_ros": 61.86
-    },
-    {
       "espn_id": 4241474,
       "name": "Brian Robinson Jr.",
       "position": "RB",
@@ -956,6 +2686,20 @@
       "waivers_clear_at": "2026-10-02T07:00:00+00:00",
       "espn_week": 5.81,
       "espn_ros": 78.96
+    },
+    {
+      "espn_id": -16029,
+      "name": "Panthers D/ST",
+      "position": "D/ST",
+      "team": "CAR",
+      "injury_status": null,
+      "status": "WAIVERS",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": "2026-10-01T07:00:00+00:00",
+      "espn_week": 3.08,
+      "espn_ros": 61.86
     },
     {
       "espn_id": 3917792,
@@ -1042,20 +2786,6 @@
       "espn_ros": 90.24
     },
     {
-      "espn_id": -16024,
-      "name": "Chargers D/ST",
-      "position": "D/ST",
-      "team": "LAC",
-      "injury_status": null,
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 4.88,
-      "espn_ros": 66.82
-    },
-    {
       "espn_id": 3116406,
       "name": "Tyreek Hill",
       "position": "WR",
@@ -1068,6 +2798,20 @@
       "waivers_clear_at": null,
       "espn_week": null,
       "espn_ros": null
+    },
+    {
+      "espn_id": -16024,
+      "name": "Chargers D/ST",
+      "position": "D/ST",
+      "team": "LAC",
+      "injury_status": null,
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 4.88,
+      "espn_ros": 66.82
     },
     {
       "espn_id": 4569603,
@@ -1098,20 +2842,6 @@
       "espn_ros": 0.0
     },
     {
-      "espn_id": 4430539,
-      "name": "Brenton Strange",
-      "position": "TE",
-      "team": "JAX",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 6.44,
-      "espn_ros": 90.6
-    },
-    {
       "espn_id": 2576925,
       "name": "Darren Waller",
       "position": "TE",
@@ -1124,6 +2854,20 @@
       "waivers_clear_at": null,
       "espn_week": 7.55,
       "espn_ros": 71.65
+    },
+    {
+      "espn_id": 4430539,
+      "name": "Brenton Strange",
+      "position": "TE",
+      "team": "JAX",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 6.44,
+      "espn_ros": 90.6
     },
     {
       "espn_id": 4241463,
@@ -1154,20 +2898,6 @@
       "espn_ros": 83.53
     },
     {
-      "espn_id": 4429086,
-      "name": "Michael Mayer",
-      "position": "TE",
-      "team": "LV",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 4.99,
-      "espn_ros": 67.44
-    },
-    {
       "espn_id": 2576980,
       "name": "Marcus Mariota",
       "position": "QB",
@@ -1180,6 +2910,20 @@
       "waivers_clear_at": null,
       "espn_week": 18.4,
       "espn_ros": 37.04
+    },
+    {
+      "espn_id": 4429086,
+      "name": "Michael Mayer",
+      "position": "TE",
+      "team": "LV",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 4.99,
+      "espn_ros": 67.44
     },
     {
       "espn_id": 3925357,
@@ -1294,18 +3038,18 @@
       "espn_ros": 57.12
     },
     {
-      "espn_id": 4595342,
-      "name": "Oronde Gadsden",
-      "position": "TE",
-      "team": "LAC",
-      "injury_status": "ACTIVE",
-      "status": "WAIVERS",
+      "espn_id": -16013,
+      "name": "Raiders D/ST",
+      "position": "D/ST",
+      "team": "LV",
+      "injury_status": null,
+      "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
       "droppable": null,
-      "waivers_clear_at": "2026-10-01T07:00:00+00:00",
-      "espn_week": 5.54,
-      "espn_ros": 71.42
+      "waivers_clear_at": null,
+      "espn_week": 4.66,
+      "espn_ros": 84.27
     },
     {
       "espn_id": 4870847,
@@ -1336,18 +3080,18 @@
       "espn_ros": 83.93
     },
     {
-      "espn_id": -16013,
-      "name": "Raiders D/ST",
-      "position": "D/ST",
-      "team": "LV",
-      "injury_status": null,
-      "status": "FREEAGENT",
+      "espn_id": 4595342,
+      "name": "Oronde Gadsden",
+      "position": "TE",
+      "team": "LAC",
+      "injury_status": "ACTIVE",
+      "status": "WAIVERS",
       "lineup_slot": null,
       "locked": false,
       "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 4.66,
-      "espn_ros": 84.27
+      "waivers_clear_at": "2026-10-01T07:00:00+00:00",
+      "espn_week": 5.54,
+      "espn_ros": 71.42
     },
     {
       "espn_id": 2991662,
@@ -1364,20 +3108,6 @@
       "espn_ros": 69.86
     },
     {
-      "espn_id": 4682648,
-      "name": "Malachi Fields",
-      "position": "WR",
-      "team": "NYG",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 6.53,
-      "espn_ros": 85.75
-    },
-    {
       "espn_id": 15864,
       "name": "Geno Smith",
       "position": "QB",
@@ -1390,6 +3120,20 @@
       "waivers_clear_at": null,
       "espn_week": 15.15,
       "espn_ros": 215.27
+    },
+    {
+      "espn_id": 4682648,
+      "name": "Malachi Fields",
+      "position": "WR",
+      "team": "NYG",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 6.53,
+      "espn_ros": 85.75
     },
     {
       "espn_id": 3122840,
@@ -1476,6 +3220,20 @@
       "espn_ros": 91.44
     },
     {
+      "espn_id": -16020,
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "team": "NYJ",
+      "injury_status": null,
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 7.56,
+      "espn_ros": 97.64
+    },
+    {
       "espn_id": 4241457,
       "name": "Najee Harris",
       "position": "RB",
@@ -1516,20 +3274,6 @@
       "waivers_clear_at": null,
       "espn_week": 12.67,
       "espn_ros": 188.02
-    },
-    {
-      "espn_id": -16020,
-      "name": "Jets D/ST",
-      "position": "D/ST",
-      "team": "NYJ",
-      "injury_status": null,
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 7.56,
-      "espn_ros": 97.64
     },
     {
       "espn_id": 4819231,
@@ -1616,20 +3360,6 @@
       "espn_ros": 84.24
     },
     {
-      "espn_id": 4586312,
-      "name": "Jaylin Noel",
-      "position": "WR",
-      "team": "HOU",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 2.92,
-      "espn_ros": 38.17
-    },
-    {
       "espn_id": 4360423,
       "name": "Michael Penix Jr.",
       "position": "QB",
@@ -1642,6 +3372,20 @@
       "waivers_clear_at": null,
       "espn_week": 14.72,
       "espn_ros": 200.11
+    },
+    {
+      "espn_id": 4586312,
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "team": "HOU",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 2.92,
+      "espn_ros": 38.17
     },
     {
       "espn_id": 4635008,
@@ -1686,20 +3430,6 @@
       "espn_ros": 124.8
     },
     {
-      "espn_id": 3886598,
-      "name": "Jauan Jennings",
-      "position": "WR",
-      "team": "MIN",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 4.48,
-      "espn_ros": 59.28
-    },
-    {
       "espn_id": 4695404,
       "name": "Isaiah Davis",
       "position": "RB",
@@ -1712,6 +3442,20 @@
       "waivers_clear_at": null,
       "espn_week": 8.3,
       "espn_ros": 8.3
+    },
+    {
+      "espn_id": 3886598,
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "team": "MIN",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 4.48,
+      "espn_ros": 59.28
     },
     {
       "espn_id": 4686612,
@@ -1868,20 +3612,6 @@
       "espn_ros": 53.22
     },
     {
-      "espn_id": 3045147,
-      "name": "James Conner",
-      "position": "RB",
-      "team": "ARI",
-      "injury_status": "INJURY_RESERVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
       "espn_id": 15168,
       "name": "Case Keenum",
       "position": "QB",
@@ -1894,6 +3624,20 @@
       "waivers_clear_at": null,
       "espn_week": 14.77,
       "espn_ros": 14.77
+    },
+    {
+      "espn_id": 3045147,
+      "name": "James Conner",
+      "position": "RB",
+      "team": "ARI",
+      "injury_status": "INJURY_RESERVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
     },
     {
       "espn_id": 3123076,
@@ -1994,20 +3738,6 @@
       "espn_ros": 73.97
     },
     {
-      "espn_id": 15835,
-      "name": "Zach Ertz",
-      "position": "TE",
-      "team": "PHI",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 2.96,
-      "espn_ros": 2.96
-    },
-    {
       "espn_id": 4428209,
       "name": "Ricky Pearsall",
       "position": "WR",
@@ -2020,6 +3750,20 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 0.0
+    },
+    {
+      "espn_id": 15835,
+      "name": "Zach Ertz",
+      "position": "TE",
+      "team": "PHI",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 2.96,
+      "espn_ros": 2.96
     },
     {
       "espn_id": 5081508,
@@ -2148,20 +3892,6 @@
       "espn_ros": 0.0
     },
     {
-      "espn_id": 3043116,
-      "name": "Demarcus Robinson",
-      "position": "WR",
-      "team": "SF",
-      "injury_status": "INJURY_RESERVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
       "espn_id": 3068267,
       "name": "Austin Ekeler",
       "position": "RB",
@@ -2176,6 +3906,20 @@
       "espn_ros": 45.26
     },
     {
+      "espn_id": 3043116,
+      "name": "Demarcus Robinson",
+      "position": "WR",
+      "team": "SF",
+      "injury_status": "INJURY_RESERVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 4430968,
       "name": "Kimani Vidal",
       "position": "RB",
@@ -2188,6 +3932,20 @@
       "waivers_clear_at": null,
       "espn_week": 1.91,
       "espn_ros": 28.31
+    },
+    {
+      "espn_id": -16022,
+      "name": "Cardinals D/ST",
+      "position": "D/ST",
+      "team": "ARI",
+      "injury_status": null,
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 6.15,
+      "espn_ros": 46.6
     },
     {
       "espn_id": 3915411,
@@ -2218,20 +3976,6 @@
       "espn_ros": 67.28
     },
     {
-      "espn_id": -16022,
-      "name": "Cardinals D/ST",
-      "position": "D/ST",
-      "team": "ARI",
-      "injury_status": null,
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 6.15,
-      "espn_ros": 46.6
-    },
-    {
       "espn_id": 3676833,
       "name": "KaVontae Turpin",
       "position": "WR",
@@ -2244,20 +3988,6 @@
       "waivers_clear_at": null,
       "espn_week": 1.77,
       "espn_ros": 26.46
-    },
-    {
-      "espn_id": 4432762,
-      "name": "Shedeur Sanders",
-      "position": "QB",
-      "team": "CLE",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
     },
     {
       "espn_id": -16011,
@@ -2274,6 +4004,20 @@
       "espn_ros": 70.32
     },
     {
+      "espn_id": 4432762,
+      "name": "Shedeur Sanders",
+      "position": "QB",
+      "team": "CLE",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 4430034,
       "name": "Xavier Legette",
       "position": "WR",
@@ -2286,20 +4030,6 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 62.89
-    },
-    {
-      "espn_id": 4569371,
-      "name": "Isaiah Williams",
-      "position": "WR",
-      "team": "NYJ",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 5.51,
-      "espn_ros": 53.86
     },
     {
       "espn_id": 4036131,
@@ -2316,6 +4046,20 @@
       "espn_ros": 45.44
     },
     {
+      "espn_id": 4569371,
+      "name": "Isaiah Williams",
+      "position": "WR",
+      "team": "NYJ",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 5.51,
+      "espn_ros": 53.86
+    },
+    {
       "espn_id": 4433970,
       "name": "J.J. McCarthy",
       "position": "QB",
@@ -2328,48 +4072,6 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 133.72
-    },
-    {
-      "espn_id": 4912218,
-      "name": "Cyrus Allen",
-      "position": "WR",
-      "team": "KC",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
-      "espn_id": 5220680,
-      "name": "Ted Hurst III",
-      "position": "WR",
-      "team": "TB",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 5.2,
-      "espn_ros": 73.26
-    },
-    {
-      "espn_id": 4362921,
-      "name": "Tyquan Thornton",
-      "position": "WR",
-      "team": "KC",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 4.31,
-      "espn_ros": 60.35
     },
     {
       "espn_id": 2573401,
@@ -2386,6 +4088,34 @@
       "espn_ros": 20.71
     },
     {
+      "espn_id": 5220680,
+      "name": "Ted Hurst III",
+      "position": "WR",
+      "team": "TB",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 5.2,
+      "espn_ros": 73.26
+    },
+    {
+      "espn_id": 4912218,
+      "name": "Cyrus Allen",
+      "position": "WR",
+      "team": "KC",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 4430802,
       "name": "Darnell Washington",
       "position": "TE",
@@ -2398,6 +4128,20 @@
       "waivers_clear_at": null,
       "espn_week": 3.3,
       "espn_ros": 47.86
+    },
+    {
+      "espn_id": 4362921,
+      "name": "Tyquan Thornton",
+      "position": "WR",
+      "team": "KC",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 4.31,
+      "espn_ros": 60.35
     },
     {
       "espn_id": -16001,
@@ -2470,6 +4214,20 @@
       "espn_ros": 70.93
     },
     {
+      "espn_id": 4596472,
+      "name": "Jalon Daniels",
+      "position": "QB",
+      "team": "TB",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 14.87,
+      "espn_ros": 41.49
+    },
+    {
       "espn_id": 4710855,
       "name": "Konata Mumpfield",
       "position": "WR",
@@ -2496,20 +4254,6 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 0.0
-    },
-    {
-      "espn_id": 4596472,
-      "name": "Jalon Daniels",
-      "position": "QB",
-      "team": "TB",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 14.87,
-      "espn_ros": 41.49
     },
     {
       "espn_id": 3930086,
@@ -2540,6 +4284,20 @@
       "espn_ros": 32.36
     },
     {
+      "espn_id": 4242557,
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LAR",
+      "injury_status": "QUESTIONABLE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 5.47,
+      "espn_ros": 44.9
+    },
+    {
       "espn_id": 4240603,
       "name": "Malik Davis",
       "position": "RB",
@@ -2566,20 +4324,6 @@
       "waivers_clear_at": null,
       "espn_week": 0.68,
       "espn_ros": 10.36
-    },
-    {
-      "espn_id": 4242557,
-      "name": "Colby Parkinson",
-      "position": "TE",
-      "team": "LAR",
-      "injury_status": "QUESTIONABLE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 5.47,
-      "espn_ros": 44.9
     },
     {
       "espn_id": 4241479,
@@ -2946,6 +4690,20 @@
       "espn_ros": 38.93
     },
     {
+      "espn_id": 4430656,
+      "name": "Myles Price",
+      "position": "WR",
+      "team": "MIN",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 4259147,
       "name": "Jake Tonges",
       "position": "TE",
@@ -3000,20 +4758,6 @@
       "waivers_clear_at": null,
       "espn_week": 4.63,
       "espn_ros": 63.74
-    },
-    {
-      "espn_id": 4430656,
-      "name": "Myles Price",
-      "position": "WR",
-      "team": "MIN",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
     },
     {
       "espn_id": 4368003,
@@ -3128,20 +4872,6 @@
       "espn_ros": 31.79
     },
     {
-      "espn_id": 4685279,
-      "name": "Jaydon Blue",
-      "position": "RB",
-      "team": null,
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
       "espn_id": 4678006,
       "name": "Elijah Arroyo",
       "position": "TE",
@@ -3160,6 +4890,20 @@
       "name": "Joe Flacco",
       "position": "QB",
       "team": "CIN",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
+      "espn_id": 4685279,
+      "name": "Jaydon Blue",
+      "position": "RB",
+      "team": null,
       "injury_status": "ACTIVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
@@ -3296,20 +5040,6 @@
       "espn_ros": 0.0
     },
     {
-      "espn_id": 4360797,
-      "name": "Tutu Atwell",
-      "position": "WR",
-      "team": "LAR",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
       "espn_id": 4362748,
       "name": "Tyler Badie",
       "position": "RB",
@@ -3322,6 +5052,20 @@
       "waivers_clear_at": null,
       "espn_week": 1.48,
       "espn_ros": 21.53
+    },
+    {
+      "espn_id": 4360797,
+      "name": "Tutu Atwell",
+      "position": "WR",
+      "team": "LAR",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
     },
     {
       "espn_id": 3059915,
@@ -3450,6 +5194,20 @@
       "espn_ros": 54.8
     },
     {
+      "espn_id": 4366963,
+      "name": "Dylan Laube",
+      "position": "RB",
+      "team": "LV",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 5088338,
       "name": "Elijah Sarratt",
       "position": "WR",
@@ -3504,20 +5262,6 @@
       "waivers_clear_at": null,
       "espn_week": 2.57,
       "espn_ros": 22.23
-    },
-    {
-      "espn_id": 4366963,
-      "name": "Dylan Laube",
-      "position": "RB",
-      "team": "LV",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
     },
     {
       "espn_id": 3054212,
@@ -3804,7 +5548,7 @@
       "name": "Kene Nwangwu",
       "position": "RB",
       "team": "NYJ",
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
@@ -3996,20 +5740,6 @@
       "espn_ros": 51.0
     },
     {
-      "espn_id": 2972515,
-      "name": "Cooper Rush",
-      "position": "QB",
-      "team": "ATL",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.0,
-      "espn_ros": 0.0
-    },
-    {
       "espn_id": 5092508,
       "name": "Colbie Young",
       "position": "WR",
@@ -4164,6 +5894,20 @@
       "espn_ros": 0.0
     },
     {
+      "espn_id": 2972515,
+      "name": "Cooper Rush",
+      "position": "QB",
+      "team": "ATL",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.0,
+      "espn_ros": 0.0
+    },
+    {
       "espn_id": 4426844,
       "name": "Elijah Higgins",
       "position": "TE",
@@ -4190,20 +5934,6 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 0.0
-    },
-    {
-      "espn_id": 4361577,
-      "name": "Dyami Brown",
-      "position": "WR",
-      "team": "WAS",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 1.89,
-      "espn_ros": 24.92
     },
     {
       "espn_id": 4259305,
@@ -4302,6 +6032,20 @@
       "waivers_clear_at": null,
       "espn_week": 1.11,
       "espn_ros": 16.11
+    },
+    {
+      "espn_id": 4361577,
+      "name": "Dyami Brown",
+      "position": "WR",
+      "team": "WAS",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 1.89,
+      "espn_ros": 24.92
     },
     {
       "espn_id": 3892775,
@@ -5078,7 +6822,7 @@
       "name": "Jeremy Ruckert",
       "position": "TE",
       "team": "NYJ",
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
@@ -5886,20 +7630,6 @@
       "espn_ros": 0.0
     },
     {
-      "espn_id": 4372505,
-      "name": "Payne Durham",
-      "position": "TE",
-      "team": "TB",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 0.37,
-      "espn_ros": 5.17
-    },
-    {
       "espn_id": 4433971,
       "name": "Kyle McCord",
       "position": "QB",
@@ -6192,6 +7922,20 @@
       "waivers_clear_at": null,
       "espn_week": 0.76,
       "espn_ros": 10.41
+    },
+    {
+      "espn_id": 4431342,
+      "name": "Brennan Presley",
+      "position": "WR",
+      "team": null,
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": null,
+      "espn_ros": null
     },
     {
       "espn_id": 4683151,
@@ -6542,6 +8286,20 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 2.65
+    },
+    {
+      "espn_id": 4372505,
+      "name": "Payne Durham",
+      "position": "TE",
+      "team": "TB",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 0.37,
+      "espn_ros": 5.17
     },
     {
       "espn_id": 4573398,
@@ -7174,6 +8932,20 @@
       "espn_ros": null
     },
     {
+      "espn_id": 4373684,
+      "name": "Scott Matlock",
+      "position": "RB",
+      "team": "LAC",
+      "injury_status": "INJURY_RESERVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": null,
+      "espn_ros": null
+    },
+    {
       "espn_id": 4431210,
       "name": "Beaux Collins",
       "position": "WR",
@@ -7277,20 +9049,6 @@
       "position": "RB",
       "team": null,
       "injury_status": "QUESTIONABLE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": null,
-      "espn_ros": null
-    },
-    {
-      "espn_id": 4431342,
-      "name": "Brennan Presley",
-      "position": "WR",
-      "team": null,
-      "injury_status": "ACTIVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
@@ -8644,6 +10402,20 @@
       "espn_ros": 0.0
     },
     {
+      "espn_id": 2574630,
+      "name": "Jeff Driskel",
+      "position": "QB",
+      "team": null,
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": null,
+      "espn_ros": null
+    },
+    {
       "espn_id": 4241802,
       "name": "Jalen Reagor",
       "position": "WR",
@@ -9778,6 +11550,20 @@
       "espn_ros": 0.0
     },
     {
+      "espn_id": 3722362,
+      "name": "Brett Rypien",
+      "position": "QB",
+      "team": null,
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": null,
+      "espn_ros": null
+    },
+    {
       "espn_id": 4035693,
       "name": "Velus Jones Jr.",
       "position": "RB",
@@ -9951,20 +11737,6 @@
       "position": "WR",
       "team": null,
       "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": null,
-      "espn_ros": null
-    },
-    {
-      "espn_id": 4373684,
-      "name": "Scott Matlock",
-      "position": "RB",
-      "team": "LAC",
-      "injury_status": "INJURY_RESERVE",
       "status": "FREEAGENT",
       "lineup_slot": null,
       "locked": false,
@@ -11234,20 +13006,6 @@
       "espn_ros": null
     },
     {
-      "espn_id": 2574630,
-      "name": "Jeff Driskel",
-      "position": "QB",
-      "team": null,
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": null,
-      "espn_ros": null
-    },
-    {
       "espn_id": 4039043,
       "name": "Collin Johnson",
       "position": "WR",
@@ -11881,20 +13639,6 @@
       "espn_id": 3128452,
       "name": "Jordan Akins",
       "position": "TE",
-      "team": null,
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": null,
-      "espn_ros": null
-    },
-    {
-      "espn_id": 3722362,
-      "name": "Brett Rypien",
-      "position": "QB",
       "team": null,
       "injury_status": "ACTIVE",
       "status": "FREEAGENT",
