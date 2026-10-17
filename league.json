@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17T05:54:59+00:00",
+  "fetched_at": "2026-10-17T06:55:20+00:00",
   "league_id": "96498436",
   "league_name": "Respect is Earned.",
   "season": 2026,
@@ -2712,20 +2712,6 @@
       "espn_ros": 196.8
     },
     {
-      "espn_id": 2973405,
-      "name": "Kalif Raymond",
-      "position": "WR",
-      "team": "CHI",
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 5.7,
-      "espn_ros": 65.29
-    },
-    {
       "espn_id": -16020,
       "name": "Jets D/ST",
       "position": "D/ST",
@@ -2738,6 +2724,20 @@
       "waivers_clear_at": null,
       "espn_week": 6.05,
       "espn_ros": 83.94
+    },
+    {
+      "espn_id": 2973405,
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "CHI",
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 5.7,
+      "espn_ros": 65.29
     },
     {
       "espn_id": 4710714,
@@ -3958,20 +3958,6 @@
       "espn_ros": 14.32
     },
     {
-      "espn_id": 3068267,
-      "name": "Austin Ekeler",
-      "position": "RB",
-      "team": "WAS",
-      "injury_status": "QUESTIONABLE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": 3.09,
-      "espn_ros": 41.33
-    },
-    {
       "espn_id": 3895856,
       "name": "Christian Kirk",
       "position": "WR",
@@ -3984,6 +3970,20 @@
       "waivers_clear_at": null,
       "espn_week": 0.0,
       "espn_ros": 0.0
+    },
+    {
+      "espn_id": 3068267,
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "injury_status": "QUESTIONABLE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": 3.09,
+      "espn_ros": 41.33
     },
     {
       "espn_id": 3123076,
@@ -6898,20 +6898,6 @@
       "espn_ros": null
     },
     {
-      "espn_id": 15795,
-      "name": "DeAndre Hopkins",
-      "position": "WR",
-      "team": null,
-      "injury_status": "ACTIVE",
-      "status": "FREEAGENT",
-      "lineup_slot": null,
-      "locked": false,
-      "droppable": null,
-      "waivers_clear_at": null,
-      "espn_week": null,
-      "espn_ros": null
-    },
-    {
       "espn_id": 4429202,
       "name": "Israel Abanikanda",
       "position": "RB",
@@ -7498,6 +7484,20 @@
       "waivers_clear_at": null,
       "espn_week": 1.87,
       "espn_ros": 24.39
+    },
+    {
+      "espn_id": 15795,
+      "name": "DeAndre Hopkins",
+      "position": "WR",
+      "team": null,
+      "injury_status": "ACTIVE",
+      "status": "FREEAGENT",
+      "lineup_slot": null,
+      "locked": false,
+      "droppable": null,
+      "waivers_clear_at": null,
+      "espn_week": null,
+      "espn_ros": null
     },
     {
       "espn_id": 3116593,

@@ -132,18 +132,24 @@ def expectation(low: float, median: float, high: float) -> float:
     return w_low * low + w_mid * median + w_high * high
 
 
-def gridiron_offense(rows: list[dict], path: Path) -> dict[int, dict]:
-    """GridironAI row per ESPN id, joined by name exactly as the pool pipeline joins."""
+def gridiron_offense(rows: list[dict], path: Path, warnings: list[str]) -> dict[int, dict]:
+    """GridironAI row per ESPN id, joined by name exactly as the pool pipeline joins.
+
+    A corrupt row is skipped with a warning, so its player reads as unlisted by GridironAI.
+    """
     source_rows = load_gridiron(path)
     cap = UPSIDE_CAP_FACTOR * max(row["points"] for row in source_rows)
+    kept = []
     for row in source_rows:
         if row["points_high"] > cap:
-            raise ValueError(
-                f"{path.name}: {row['name']} has upside {row['points_high']} on a "
-                f"{row['points']} median, above the board's {cap:.1f} cap; the export is "
-                "corrupt, so delete the row or wait for GridironAI to fix it"
+            warnings.append(
+                f"{path.name}: skipped {row['name']} ({row['position']} {row['team']}), whose "
+                f"upside {row['points_high']} on a {row['points']} median is above the board's "
+                f"{cap:.1f} cap; the row is corrupt"
             )
-    index = GridironIndex(source_rows)
+        else:
+            kept.append(row)
+    index = GridironIndex(kept)
     joined: dict[int, dict] = {}
     claimed: dict[int, int] = {}
     for row in rows:
@@ -181,13 +187,13 @@ def load_players(
 ) -> tuple[list[Player], list[Player], list[str]]:
     """(my roster, available players, warnings) with GridironAI's projections."""
     rows = document["players"]
-    week_rows = gridiron_offense(rows, weekly)
-    ros_rows = gridiron_offense(rows, ros)
+    warnings: list[str] = []
+    week_rows = gridiron_offense(rows, weekly, warnings)
+    ros_rows = gridiron_offense(rows, ros, warnings)
     dst_week = gridiron_dst(weekly)
 
     mine: list[Player] = []
     available: list[Player] = []
-    warnings: list[str] = []
     unlisted: list[dict] = []
     for row in rows:
         is_mine = row["status"] == "MINE"
