@@ -159,6 +159,7 @@ Each week:
 
 ```bash
 uv run weekly.py
+uv run weekly.py --manual   # GridironAI's two exports already downloaded by hand
 ```
 
 It fetches the league (`league_pipeline/fetch_league.py`), downloads GridironAI's two
@@ -167,8 +168,14 @@ then prints the lineup and the claim list. The CSVs land at the repo root under 
 site's own names, `gridironai-rankings-<season>-<week>.csv` (this week, D/ST included)
 and `gridironai-rankings-<season>-rest-of-season-from-week-<week>.csv`, and the
 optimizer reads the pair for ESPN's current week, so it stops if GridironAI has not
-rolled to that week yet. It submits nothing to ESPN. Run it before waivers process for
+rolled to that week yet. It also stops on a corrupt export, one with an upside above
+2.5x the board's best median (`UPSIDE_CAP_FACTOR`). It submits nothing to ESPN. Run it before waivers process for
 the claims, and again before kickoff once claims have cleared and projections have moved.
+
+GridironAI's load balancer answers 403 to cloud addresses, Codespaces included. From one of
+those, download the two exports by hand (the rankings page's Download Data button, this
+week and rest of season) into the repo root and pass `--manual`, which skips only that
+download; the ESPN fetch still runs.
 
 - Lineup: maximizes this week's expected points, Swanson's 0.3/0.4/0.3 over
   GridironAI's weekly quantiles. Players whose game has started keep their slot, and IR

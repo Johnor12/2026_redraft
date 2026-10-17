@@ -7,6 +7,10 @@ Three steps:
     2. league_pipeline/fetch_gridiron.py   GridironAI -> two rankings CSVs at the repo root
     3. this script                         league.json + GridironAI exports -> stdout
 
+GridironAI's load balancer answers 403 to cloud addresses, this Codespace's included, so
+`--manual` skips step 2: download the two exports by hand from the site's rankings page
+(Download Data, this week and rest of season) into the repo root first.
+
 Projections are GridironAI's, downloaded from the site for this league's team there (its
 scoring is configured on the site) and saved under the site's own names, which carry
 GridironAI's current week:
@@ -43,10 +47,12 @@ Nothing is submitted to ESPN.
 
 Usage:
     uv run weekly.py
+    uv run weekly.py --manual    # the two GridironAI exports are already at the repo root
 """
 
 from __future__ import annotations
 
+import argparse
 import collections
 import csv
 import datetime as dt
@@ -82,6 +88,11 @@ IR_LEGAL = {"OUT", "INJURY_RESERVE", "QUESTIONABLE", "DOUBTFUL"}
 # A claim sends me to the back of the waiver order; a rest-of-season gain below this is
 # not worth the priority.
 MIN_CLAIM_GAIN = 3.0
+
+# No upside legitimately exceeds ~1.9x the board's best median (backup QBs top out there).
+# GridironAI's week 6 rest-of-season export put Irvin Charles at 731.4 on a 1.8 median,
+# which the claim pricing turned into the top claim.
+UPSIDE_CAP_FACTOR = 2.5
 
 
 @dataclass(slots=True)
@@ -123,7 +134,16 @@ def expectation(low: float, median: float, high: float) -> float:
 
 def gridiron_offense(rows: list[dict], path: Path) -> dict[int, dict]:
     """GridironAI row per ESPN id, joined by name exactly as the pool pipeline joins."""
-    index = GridironIndex(load_gridiron(path))
+    source_rows = load_gridiron(path)
+    cap = UPSIDE_CAP_FACTOR * max(row["points"] for row in source_rows)
+    for row in source_rows:
+        if row["points_high"] > cap:
+            raise ValueError(
+                f"{path.name}: {row['name']} has upside {row['points_high']} on a "
+                f"{row['points']} median, above the board's {cap:.1f} cap; the export is "
+                "corrupt, so delete the row or wait for GridironAI to fix it"
+            )
+    index = GridironIndex(source_rows)
     joined: dict[int, dict] = {}
     claimed: dict[int, int] = {}
     for row in rows:
@@ -430,19 +450,29 @@ def report(document: dict, mine: list[Player], claims: list[Claim]) -> None:
         )
 
 
-def main() -> int:
-    fetches = [
-        ("league", "league_pipeline/fetch_league.py"),
-        ("gridiron", "league_pipeline/fetch_gridiron.py"),
-    ]
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument(
+        "--manual",
+        action="store_true",
+        help="skip the GridironAI download; its two exports are already at the repo root",
+    )
+    args = ap.parse_args(argv)
+
+    fetches = [("league", "league_pipeline/fetch_league.py")]
+    if not args.manual:
+        fetches.append(("gridiron", "league_pipeline/fetch_gridiron.py"))
+    steps = len(fetches) + 1
     for number, (name, script) in enumerate(fetches, start=1):
-        print(f"\n=== [{number}/3] {name} ===", file=sys.stderr)
+        print(f"\n=== [{number}/{steps}] {name} ===", file=sys.stderr)
         code = subprocess.run(["uv", "run", script], cwd=REPO_ROOT).returncode
         if code != 0:
             print(f"weekly failed at step '{name}' (exit {code})", file=sys.stderr)
             return code
 
-    print("\n=== [3/3] optimize ===", file=sys.stderr)
+    print(f"\n=== [{steps}/{steps}] optimize ===", file=sys.stderr)
     document = json.loads(LEAGUE.read_text(encoding="utf-8"))
     if document["lineup_slots"] != LINEUP_SLOTS:
         print(
@@ -459,11 +489,12 @@ def main() -> int:
     ros = REPO_ROOT / f"gridironai-rankings-{season}-rest-of-season-from-week-{week}.csv"
     missing = [path.name for path in (weekly, ros) if not path.is_file()]
     if missing:
-        print(
-            f"error: missing {', '.join(missing)} — GridironAI has not rolled to ESPN's "
-            f"week {week} yet",
-            file=sys.stderr,
+        cause = (
+            "download GridironAI's exports for this week to the repo root"
+            if args.manual
+            else f"GridironAI has not rolled to ESPN's week {week} yet"
         )
+        print(f"error: missing {', '.join(missing)}: {cause}", file=sys.stderr)
         return 1
 
     try:

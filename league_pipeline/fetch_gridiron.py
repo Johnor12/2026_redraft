@@ -105,7 +105,14 @@ def main() -> int:
         for query in BOARDS:
             download(opener, query)
     except urllib.error.HTTPError as exc:
-        print(f"error: GridironAI answered {exc.code} {exc.reason}", file=sys.stderr)
+        # The site's load balancer refuses cloud addresses (Codespaces included) outright,
+        # before the login is even read.
+        hint = (
+            "; from a cloud machine, download the exports by hand and run weekly.py --manual"
+            if exc.code == 403
+            else ""
+        )
+        print(f"error: GridironAI answered {exc.code} {exc.reason}{hint}", file=sys.stderr)
         return 1
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
